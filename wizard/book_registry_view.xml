@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="book_registry_form_view" model="ir.ui.view">
+        <field name="name">Book Registry</field>
+        <field name="model">book.registry</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <field name="book_title"/>
+                    <field name="book_author"/>
+                    <field name="book_publisher"/>
+                    <field name="book_genre" widget="many2many_tags"/>
+                    <field name="book_quantity"/>
+                </group>
+                <footer>
+                    <button name="register_book" type="object" string="Register" class="btn btn-primary"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+    <record id="book_registry_action" model="ir.actions.act_window">
+        <field name="name">Book Registry</field>
+        <field name="res_model">book.registry</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+    <menuitem id="debook_menu" name="deBook"/>
+    <menuitem id="book_registry_sub_menu" action="book_registry_action" name="Book Registry" parent="debook_menu"/>
+</odoo>

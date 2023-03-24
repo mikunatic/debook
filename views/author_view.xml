@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="author_form_view" model="ir.ui.view">
+        <field name="name">Author</field>
+        <field name="model">author</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <field name="name"/>
+                    <field name="book_ids"/>
+                </group>
+            </form>
+        </field>
+    </record>
+    <record id="author_list_view" model="ir.ui.view">
+        <field name="name">Publisher</field>
+        <field name="model">author</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+    <record id="author_action" model="ir.actions.act_window">
+        <field name="name">Author</field>
+        <field name="res_model">author</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem id="debook_menu" name="deBook" />
+    <menuitem id="author_sub_menu" action="author_action" name="Author" parent="debook_menu" sequence="2"/>
+</odoo>

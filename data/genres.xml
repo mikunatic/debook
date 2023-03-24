@@ -1,0 +1,124 @@
+<odoo>
+    <data noupdate="1">
+        <record id='genre1' model='genre'>
+            <field name='name'>Romance</field>
+        </record>
+        <record id='genre2' model='genre'>
+            <field name='name'>Drama</field>
+        </record>
+        <record id='genre3' model='genre'>
+            <field name='name'>Novela</field>
+        </record>
+        <record id='genre4' model='genre'>
+            <field name='name'>Conto</field>
+        </record>
+        <record id='genre5' model='genre'>
+            <field name='name'>Crônica</field>
+        </record>
+        <record id='genre6' model='genre'>
+            <field name='name'>Ensaio</field>
+        </record>
+        <record id='genre7' model='genre'>
+            <field name='name'>Poesia</field>
+        </record>
+        <record id='genre8' model='genre'>
+            <field name='name'>Crônica</field>
+        </record>
+        <record id='genre9' model='genre'>
+            <field name='name'>Carta</field>
+        </record>
+        <record id='genre10' model='genre'>
+            <field name='name'>Biografia</field>
+        </record>
+        <record id='genre11' model='genre'>
+            <field name='name'>Memórias</field>
+        </record>
+        <record id='genre12' model='genre'>
+            <field name='name'>Aventura</field>
+        </record>
+        <record id='genre13' model='genre'>
+            <field name='name'>Chick-Lit</field>
+        </record>
+        <record id='genre14' model='genre'>
+            <field name='name'>Graphic Novel</field>
+        </record>
+        <record id='genre15' model='genre'>
+            <field name='name'>História em Quadrinhos</field>
+        </record>
+        <record id='genre16' model='genre'>
+            <field name='name'>Lad-Lit</field>
+        </record>
+        <record id='genre17' model='genre'>
+            <field name='name'>Literatura fantástica</field>
+        </record>
+        <record id='genre18' model='genre'>
+            <field name='name'>Literatura Infantil</field>
+        </record>
+        <record id='genre19' model='genre'>
+            <field name='name'>Literatura Infanto-juvenil</field>
+        </record>
+        <record id='genre20' model='genre'>
+            <field name='name'>Literatura nacional</field>
+        </record>
+        <record id='genre21' model='genre'>
+            <field name='name'>Realismo Mágico</field>
+        </record>
+        <record id='genre22' model='genre'>
+            <field name='name'>Sick-Lit</field>
+        </record>
+        <record id='genre23' model='genre'>
+            <field name='name'>Terror</field>
+        </record>
+        <record id='genre24' model='genre'>
+            <field name='name'>Suspense</field>
+        </record>
+        <record id='genre25' model='genre'>
+            <field name='name'>Conspiração</field>
+        </record>
+        <record id='genre26' model='genre'>
+            <field name='name'>Suspense de Época</field>
+        </record>
+        <record id='genre27' model='genre'>
+            <field name='name'>Terror Jurídico</field>
+        </record>
+        <record id='genre28' model='genre'>
+            <field name='name'>Terror Médico</field>
+        </record>
+        <record id='genre29' model='genre'>
+            <field name='name'>Terror Psicológico</field>
+        </record>
+        <record id='genre30' model='genre'>
+            <field name='name'>Terror Romântico</field>
+        </record>
+        <record id='genre31' model='genre'>
+            <field name='name'>Young Adult</field>
+        </record>
+        <record id='genre32' model='genre'>
+            <field name='name'>Artigo Acadêmico</field>
+        </record>
+        <record id='genre33' model='genre'>
+            <field name='name'>Artigo Acadêmico</field>
+        </record>
+        <record id='genre34' model='genre'>
+            <field name='name'>Monografia</field>
+        </record>
+        <record id='genre35' model='genre'>
+            <field name='name'>Trabalho de Conclusão de Curso </field>
+        </record>
+        <record id='genre36' model='genre'>
+            <field name='name'>Dissertação de Mestrado</field>
+        </record>
+        <record id='genre37' model='genre'>
+            <field name='name'>Tese de Doutorado</field>
+        </record>
+        <record id='genre38' model='genre'>
+            <field name='name'>Realismo Literário</field>
+        </record>
+        <record id='genre39' model='genre'>
+            <field name='name'>Ficção</field>
+        </record>
+        <record id='genre39' model='genre'>
+            <field name='name'>Memórias</field>
+        </record>
+    </data>
+</odoo>

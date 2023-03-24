@@ -1,0 +1,19 @@
+<odoo>
+    <data noupdate="1">
+        <record id='author1' model='author'>
+            <field name='name'>Machado de Assis</field>
+        </record>
+        <record id='author2' model='author'>
+            <field name='name'>Carlos Drummond de Andrade</field>
+        </record>
+        <record id='author3' model='author'>
+            <field name='name'>Cecília Meirelles</field>
+        </record>
+        <record id='author4' model='author'>
+            <field name='name'>Guimarães Rosa</field>
+        </record>
+        <record id='author5' model='author'>
+            <field name='name'>Clarice Lispector</field>
+        </record>
+    </data>
+</odoo>

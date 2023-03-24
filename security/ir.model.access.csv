@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+book,book,model_book,base.group_user,1,1,1,1
+author,author,model_author,base.group_user,1,1,1,1
+publisher,publisher,model_publisher,base.group_user,1,1,1,1
+book_registry,book_registry,model_book_registry,base.group_user,1,1,1,1
+genre,genre,model_genre,base.group_user,1,1,1,1
+

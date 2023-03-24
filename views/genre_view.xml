@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="genre_form_view" model="ir.ui.view">
+        <field name="name">Genre</field>
+        <field name="model">genre</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <field name="name"/>
+                    <field name="book_ids"/>
+                </group>
+            </form>
+        </field>
+    </record>
+    <record id="genre_list_view" model="ir.ui.view">
+        <field name="name">Genre</field>
+        <field name="model">genre</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+    <record id="genre_action" model="ir.actions.act_window">
+        <field name="name">Genre</field>
+        <field name="res_model">genre</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem id="debook_menu" name="deBook" />
+    <menuitem id="genre_sub_menu" action="genre_action" name="Genre" parent="debook_menu" sequence="3"/>
+</odoo>
