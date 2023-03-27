@@ -9,7 +9,8 @@ class Book(models.Model):
     author_id = fields.Many2one('author')
     publisher_id = fields.Many2one('publisher')
     genre_ids = fields.Many2many('genre')
-    book_cover = fields.Image("Book Cover")
+    book_cover = fields.Binary("Book Cover")
+    rent_ids = fields.One2many(comodel_name="rent", inverse_name="book_id", readonly=True)
 
     def name_get(self):
         for rec in self:

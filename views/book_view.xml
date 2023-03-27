@@ -5,13 +5,27 @@
         <field name="model">book</field>
         <field name="arch" type="xml">
             <form>
-                <group>
-                    <field name="title"/>
-                    <field name="author_id"/>
-                    <field name="publisher_id"/>
-                    <field name="genre_ids"/>
-                    <field name="book_cover"/>
-                </group>
+                <sheet>
+                    <group>
+<!--                        <h2 style="text-align: center">Pesquisa do Produto</h2>-->
+                            <field name="title" style="text-align: center; font-weight: bold" nolabel="1"/>
+                        <group>
+                            <field name="author_id"/>
+                            <field name="publisher_id"/>
+                        </group>
+                        <group>
+                            <field name="book_cover" widget="image" style="display: block;"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page id="genres" string="Genres">
+                            <field name="genre_ids" readonly="1"/>
+                        </page>
+                        <page id="rents" string="Rents">
+                            <field name="rent_ids"/>
+                        </page>
+                    </notebook>
+                </sheet>
             </form>
         </field>
     </record>
@@ -33,6 +47,7 @@
         <field name="res_model">book</field>
         <field name="view_mode">tree,form</field>
     </record>
-    <menuitem id="debook_menu" name="deBook" />
-    <menuitem id="book_sub_menu" action="book_action" name="Books" parent="debook_menu" sequence="1"/>
+    <menuitem id="debook_menu" name="deBook" web_icon="debook,static/description/icon.png"/>
+    <menuitem id="book_menu" name="Books" parent="debook_menu" sequence="1"/>
+    <menuitem id="book_sub_menu" action="book_action" name="Books" parent="book_menu" sequence="1"/>
 </odoo>

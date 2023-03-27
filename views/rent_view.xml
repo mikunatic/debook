@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="rent_form_view" model="ir.ui.view">
+        <field name="name">Rent</field>
+        <field name="model">rent</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="customer_id"/>
+                        <field name="book_id"/>
+                        <field name="expire_selection"/>
+                        <field name="expire_date"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="rent_list_view" model="ir.ui.view">
+        <field name="name">Rent</field>
+        <field name="model">rent</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="customer_id"/>
+                <field name="book_id"/>
+                <field name="expire_date"/>
+            </tree>
+        </field>
+    </record>
+    <record id="rent_action" model="ir.actions.act_window">
+        <field name="name">Rent</field>
+        <field name="res_model">rent</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem id="debook_menu" name="deBook" web_icon="debook,static/description/icon.png"/>
+    <menuitem id="rent_sub_menu" action="rent_action" name="Rent" parent="debook_menu" sequence="3"/>
+</odoo>

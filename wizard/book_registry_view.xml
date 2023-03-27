@@ -6,12 +6,22 @@
         <field name="arch" type="xml">
             <form>
                 <group>
-                    <field name="book_title"/>
-                    <field name="book_author"/>
-                    <field name="book_publisher"/>
-                    <field name="book_genre" widget="many2many_tags"/>
-                    <field name="book_quantity"/>
+                    <field name="book_title" style="text-align: center"
+                           nolabel="1" placeholder="Book Title"/>
+                    <group>
+                        <field name="book_author"/>
+                        <field name="book_publisher"/>
+                        <field name="book_quantity"/>
+                    </group>
+                    <group>
+                        <field name="book_cover" widget="image"/>
+                    </group>
                 </group>
+                    <notebook>
+                        <page id="genres" string="Genres">
+                            <field name="book_genre" options="{'no_create':True, 'no_create_edit':True}"/>
+                        </page>
+                    </notebook>
                 <footer>
                     <button name="register_book" type="object" string="Register" class="btn btn-primary"/>
                 </footer>
@@ -25,5 +35,6 @@
         <field name="target">new</field>
     </record>
     <menuitem id="debook_menu" name="deBook"/>
-    <menuitem id="book_registry_sub_menu" action="book_registry_action" name="Book Registry" parent="debook_menu"/>
+    <menuitem id="configuration_menu" name="Configuration" parent="debook_menu"/>
+    <menuitem id="book_registry_sub_menu" action="book_registry_action" name="Book Registry" parent="configuration_menu"/>
 </odoo>

@@ -1,0 +1,7 @@
+<odoo>
+    <data noupdate="1">
+        <record id='publisher1' model='publisher'>
+            <field name='name'>Carambaia</field>
+        </record>
+    </data>
+</odoo>

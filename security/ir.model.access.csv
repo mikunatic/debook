@@ -4,4 +4,6 @@ author,author,model_author,base.group_user,1,1,1,1
 publisher,publisher,model_publisher,base.group_user,1,1,1,1
 book_registry,book_registry,model_book_registry,base.group_user,1,1,1,1
 genre,genre,model_genre,base.group_user,1,1,1,1
+customer,customer,model_customer,base.group_user,1,1,1,1
+rent,rent,model_rent,base.group_user,1,1,1,1
 

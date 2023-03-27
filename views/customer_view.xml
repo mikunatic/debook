@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="customer_form_view" model="ir.ui.view">
+        <field name="name">Customer</field>
+        <field name="model">customer</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="cpf"/>
+                            <field name="email"/>
+                        </group>
+                        <group>
+                            <field name="city"/>
+                            <field name="cep"/>
+                            <field name="state" options="{'no_open':True,'no_create':True,'no_create_edit':True}"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page id="rents" string="Rents">
+                            <field name="rent_ids"/>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="customer_list_view" model="ir.ui.view">
+        <field name="name">Customer</field>
+        <field name="model">customer</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="id"/>
+                <field name="name"/>
+                <field name="cpf"/>
+                <field name="email"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+    <record id="customer_action" model="ir.actions.act_window">
+        <field name="name">Customer</field>
+        <field name="res_model">customer</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem id="debook_menu" name="deBook" web_icon="debook,static/description/icon.png"/>
+    <menuitem id="customer_sub_menu" action="customer_action" name="Customer" parent="debook_menu" sequence="2"/>
+</odoo>
