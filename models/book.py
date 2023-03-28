@@ -13,7 +13,8 @@ class Book(models.Model):
     rent_ids = fields.One2many(comodel_name="rent", inverse_name="book_id", readonly=True)
 
     def name_get(self):
+        result = []
         for rec in self:
-            result = []
-            result.append((rec.id, rec.title))
+            recname =  rec.title + " " + "(" +str(rec.id)+")"
+            result.append((rec.id, recname))
         return result
