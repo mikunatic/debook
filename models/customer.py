@@ -18,8 +18,8 @@ class Customer(models.Model):
 
     def create(self):
         for rec in self:
-            remetente = 'seu_email@gmail.com'  # Substitua com o seu endereço de email
-            senha = 'sua_senha'  # Substitua com a sua senha de email
+            remetente = 'sys4seek@gmail.com'  # Substitua com o seu endereço de email
+            senha = 'agerjumi@123'  # Substitua com a sua senha de email
 
             # Cria o objeto MIME para o email
             msg = MIMEMultipart()
