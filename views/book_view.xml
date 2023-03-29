@@ -7,11 +7,12 @@
             <form>
                 <sheet>
                     <group>
-<!--                        <h2 style="text-align: center">Pesquisa do Produto</h2>-->
                             <field name="title" style="text-align: center; font-weight: bold" nolabel="1"/>
                         <group>
-                            <field name="author_id"/>
-                            <field name="publisher_id"/>
+                            <field name="author_id" options="{'no_create':True, 'no_create_edit':True}"/>
+                            <field name="publisher_id" options="{'no_create':True, 'no_create_edit':True}"/>
+                            <field name="year"/>
+                            <field name="synopsis"/>
                         </group>
                         <group>
                             <field name="book_cover" widget="image" style="display: block;"/>

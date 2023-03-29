@@ -32,7 +32,6 @@
         <field name="model">customer</field>
         <field name="arch" type="xml">
             <tree>
-                <field name="id"/>
                 <field name="name"/>
                 <field name="cpf"/>
                 <field name="email"/>

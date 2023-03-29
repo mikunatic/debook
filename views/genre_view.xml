@@ -5,10 +5,12 @@
         <field name="model">genre</field>
         <field name="arch" type="xml">
             <form>
-                <group>
-                    <field name="name"/>
-                    <field name="book_ids"/>
-                </group>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="book_ids"/>
+                    </group>
+                </sheet>
             </form>
         </field>
     </record>

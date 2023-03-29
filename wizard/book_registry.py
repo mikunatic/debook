@@ -10,6 +10,8 @@ class BookRegistry(models.TransientModel):
     book_genre = fields.Many2many(comodel_name='genre', relation="registry_genre_rel", string="Book Genre")
     book_quantity = fields.Integer(default=1)
     book_cover = fields.Binary("Book Cover")
+    book_year = fields.Integer("Year of Release")
+    book_synopsis = fields.Text("Synopsis")
 
     def register_book(self):
         register_counter = 0
@@ -20,7 +22,9 @@ class BookRegistry(models.TransientModel):
                 'author_id':self.book_author.id,
                 'publisher_id':self.book_publisher.id,
                 'genre_ids':self.book_genre.ids,
-                'book_cover':self.book_cover
+                'book_cover':self.book_cover,
+                'year':self.book_year,
+                'synopsis':self.book_synopsis,
             }
             self.env['book'].create(book_vals_list)
             register_counter += 1
