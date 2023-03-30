@@ -1,4 +1,4 @@
-from odoo import fields, models
+from odoo import fields, models, _
 
 
 class BookRegistry(models.TransientModel):
@@ -28,3 +28,14 @@ class BookRegistry(models.TransientModel):
             }
             self.env['book'].create(book_vals_list)
             register_counter += 1
+
+        book_ids = self.env['book'].search([], order="id desc", limit = self.book_quantity)
+        return {
+            "type": "ir.actions.act_window",
+            "name": _("Books"),
+            "res_model": "book",
+            "domain": [("id", "in", book_ids.ids)],
+            "view_mode": "tree,form",
+            "context": self.env.context
+        }
+
