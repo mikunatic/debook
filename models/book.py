@@ -12,7 +12,7 @@ class Book(models.Model):
     book_cover = fields.Binary("Book Cover")
     year = fields.Integer("Year of Release")
     synopsis = fields.Text("Synopsis")
-    rent_ids = fields.One2many(comodel_name="rent", inverse_name="book_id", readonly=True)
+    rent_id = fields.One2many(comodel_name="rent", inverse_name="book_id", readonly=True)
 
     def name_get(self):
         result = []
