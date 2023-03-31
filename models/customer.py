@@ -1,7 +1,4 @@
-from odoo import fields, models
-import smtplib
-from email.mime.text import MIMEText
-from email.mime.multipart import MIMEMultipart
+from odoo import fields, models, api
 
 
 class Customer(models.Model):
@@ -16,24 +13,32 @@ class Customer(models.Model):
     country = fields.Many2one('res.country', default=31, readonly=True)
     rent_ids = fields.One2many(comodel_name="rent", inverse_name="customer_id", readonly=True)
 
-    def create(self):
-        for rec in self:
-            remetente = 'sys4seek@gmail.com'  # Substitua com o seu endereço de email
-            senha = 'agerjumi@123'  # Substitua com a sua senha de email
-
-            # Cria o objeto MIME para o email
-            msg = MIMEMultipart()
-            msg['From'] = remetente
-            msg['To'] = rec.email
-            msg['Subject'] = "Bem-vindo"
-            msg.attach(MIMEText("Você se cadastrou no deBook!", 'plain'))
-
-            # Conecta ao servidor SMTP do Gmail
-            server = smtplib.SMTP('smtp.gmail.com', 587)
-            server.starttls()
-            server.login(remetente, senha)
-
-            # Envia o email
-            texto_do_email = msg.as_string()
-            server.sendmail(remetente, rec.email, texto_do_email)
-            server.quit()
+    # @api.model
+    # def create(self, vals_list):
+    #
+    #     target = vals_list.get('email')
+    #     smtp_server = "smtp.gmail.com"
+    #     smtp_port = 587
+    #     usuario = "sys4seek@gmail.com"
+    #     senha = "agerjumi@123"
+    #     to = vals_list.get('email')
+    #     subject = "Bem-vindo"
+    #     message = "Você se cadastrou no deBook"
+    #     creds = Credentials.from_authorized_user_file('token.json', ['https://www.googleapis.com/auth/gmail.send'])
+    #
+    #     # corpo da mensagem
+    #     message = f'To: {to}\nSubject: {subject}\n\n{message}'
+    #     message_bytes = message.encode('utf-8')
+    #     message_b64 = base64.urlsafe_b64encode(message_bytes).decode('utf-8')
+    #     body = {'raw': message_b64}
+    #
+    #     try:
+    #         # cria a conexão com a API do Gmail
+    #         service = build('gmail', 'v1', credentials=creds)
+    #
+    #         # envia o e-mail
+    #         message = service.users().messages().send(userId='me', body=body).execute()
+    #         print(f'Successfully sent message to {to}, Message Id: {message["id"]}')
+    #
+    #     except Exception as error:
+    #         print(f'An error occurred: {error}')

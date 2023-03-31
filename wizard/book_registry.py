@@ -38,4 +38,3 @@ class BookRegistry(models.TransientModel):
             "view_mode": "tree,form",
             "context": self.env.context
         }
-
