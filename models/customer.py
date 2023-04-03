@@ -4,13 +4,11 @@ from odoo import fields, models, api
 class Customer(models.Model):
     _name = 'customer'
 
-    name = fields.Char("Name", required=True)
+    name = fields.Char("Nome", required=True)
     cpf = fields.Char("CPF", required=True)
     email = fields.Char("E-mail", required=True)
-    city = fields.Char("City", required=True)
+    city = fields.Many2one('res.city', string="Cidade", required=True, domain=[('state_id','=',95)])
     cep = fields.Char("CEP", required=True)
-    state = fields.Many2one('res.country.state', required=True)
-    country = fields.Many2one('res.country', default=31, readonly=True)
     rent_ids = fields.One2many(comodel_name="rent", inverse_name="customer_id", readonly=True)
 
     # @api.model

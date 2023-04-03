@@ -13,14 +13,19 @@
                             <field name="email"/>
                         </group>
                         <group>
-                            <field name="city"/>
                             <field name="cep"/>
-                            <field name="state" options="{'no_open':True,'no_create':True,'no_create_edit':True}"/>
+                            <field name="city" options="{'no_open':True,'no_create':True,'no_create_edit':True}"/>
                         </group>
                     </group>
                     <notebook>
-                        <page id="rents" string="Rents">
-                            <field name="rent_ids"/>
+                        <page id="rents" string="Aluguéis">
+                            <field name="rent_ids">
+                                <tree>
+                                    <field name="customer_id"/>
+                                    <field name="book_id"/>
+                                    <field name="date_time_fixed"/>
+                                </tree>
+                            </field>
                         </page>
                     </notebook>
                 </sheet>
@@ -35,15 +40,14 @@
                 <field name="name"/>
                 <field name="cpf"/>
                 <field name="email"/>
-                <field name="state"/>
             </tree>
         </field>
     </record>
     <record id="customer_action" model="ir.actions.act_window">
-        <field name="name">Customer</field>
+        <field name="name">Clientes</field>
         <field name="res_model">customer</field>
         <field name="view_mode">tree,form</field>
     </record>
     <menuitem id="debook_menu" name="deBook" web_icon="debook,static/description/icon.png"/>
-    <menuitem id="customer_sub_menu" action="customer_action" name="Customer" parent="debook_menu" sequence="2"/>
+    <menuitem id="customer_sub_menu" action="customer_action" name="Cliente" parent="debook_menu" sequence="2"/>
 </odoo>

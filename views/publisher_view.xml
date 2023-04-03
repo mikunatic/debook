@@ -24,11 +24,11 @@
         </field>
     </record>
     <record id="publisher_action" model="ir.actions.act_window">
-        <field name="name">Publisher</field>
+        <field name="name">Editoras</field>
         <field name="res_model">publisher</field>
         <field name="view_mode">tree,form</field>
     </record>
     <menuitem id="debook_menu" name="deBook" web_icon="debook,static/description/icon.png"/>
-    <menuitem id="book_menu" name="Books" parent="debook_menu" sequence="1"/>
-    <menuitem id="publisher_sub_menu" action="publisher_action" name="Publisher" parent="book_menu" sequence="4"/>
+    <menuitem id="book_menu" name="Livros" parent="debook_menu" sequence="1"/>
+    <menuitem id="publisher_sub_menu" action="publisher_action" name="Editoras" parent="book_menu" sequence="4"/>
 </odoo>

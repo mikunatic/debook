@@ -31,11 +31,11 @@
         </field>
     </record>
     <record id="author_action" model="ir.actions.act_window">
-        <field name="name">Author</field>
+        <field name="name">Autores</field>
         <field name="res_model">author</field>
         <field name="view_mode">tree,form</field>
     </record>
     <menuitem id="debook_menu" name="deBook" web_icon="debook,static/description/icon.png"/>
-    <menuitem id="book_menu" name="Books" parent="debook_menu" sequence="1"/>
-    <menuitem id="author_sub_menu" action="author_action" name="Author" parent="book_menu" sequence="2"/>
+    <menuitem id="book_menu" name="Livros" parent="debook_menu" sequence="1"/>
+    <menuitem id="author_sub_menu" action="author_action" name="Autores" parent="book_menu" sequence="2"/>
 </odoo>

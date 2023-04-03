@@ -4,8 +4,8 @@ from odoo import fields, models
 class Author(models.Model):
     _name = 'author'
 
-    name = fields.Char("Author Name")
-    book_ids = fields.Many2many('book', compute="populate_books", string="Books")
+    name = fields.Char("Autor")
+    book_ids = fields.Many2many('book', compute="populate_books", string="Livros")
 
     def populate_books(self):
         for rec in self:

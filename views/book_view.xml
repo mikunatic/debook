@@ -16,13 +16,15 @@
                         </group>
                         <group>
                             <field name="book_cover" widget="image" style="display: block;"/>
+                            <p></p>
+                            <field name="quantity"/>
                         </group>
                     </group>
                     <notebook>
-                        <page id="genres" string="Genres">
+                        <page id="genres" string="Gêneros">
                             <field name="genre_ids" readonly="1"/>
                         </page>
-                        <page id="rents" string="Rents">
+                        <page id="rents" string="Aluguéis">
                             <field name="rent_id"/>
                         </page>
                     </notebook>
@@ -44,11 +46,11 @@
         </field>
     </record>
     <record id="book_action" model="ir.actions.act_window">
-        <field name="name">Book</field>
+        <field name="name">Livros</field>
         <field name="res_model">book</field>
         <field name="view_mode">tree,form</field>
     </record>
     <menuitem id="debook_menu" name="deBook" web_icon="debook,static/description/icon.png"/>
-    <menuitem id="book_menu" name="Books" parent="debook_menu" sequence="1"/>
-    <menuitem id="book_sub_menu" action="book_action" name="Books" parent="book_menu" sequence="1"/>
+    <menuitem id="book_menu" name="Livros" parent="debook_menu" sequence="1"/>
+    <menuitem id="book_sub_menu" action="book_action" name="Livros" parent="book_menu" sequence="1"/>
 </odoo>

@@ -31,12 +31,12 @@
         </field>
     </record>
     <record id="book_registry_action" model="ir.actions.act_window">
-        <field name="name">Book Registry</field>
+        <field name="name">Cadastro de Livros</field>
         <field name="res_model">book.registry</field>
         <field name="view_mode">form</field>
         <field name="target">new</field>
     </record>
     <menuitem id="debook_menu" name="deBook"/>
-    <menuitem id="configuration_menu" name="Configuration" parent="debook_menu"/>
-    <menuitem id="book_registry_sub_menu" action="book_registry_action" name="Book Registry" parent="configuration_menu"/>
+    <menuitem id="configuration_menu" name="Configuração" parent="debook_menu"/>
+    <menuitem id="book_registry_sub_menu" action="book_registry_action" name="Cadastro de Livros" parent="configuration_menu"/>
 </odoo>

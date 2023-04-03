@@ -4,8 +4,8 @@ from odoo import fields, models
 class Genre(models.Model):
     _name = 'genre'
 
-    name = fields.Char("Genre")
-    book_ids = fields.Many2many('book', compute="populate_books")
+    name = fields.Char("Gênero")
+    book_ids = fields.Many2many('book', compute="populate_books", string="Livros")
 
     def populate_books(self):
         for rec in self:

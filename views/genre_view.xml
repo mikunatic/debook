@@ -24,11 +24,11 @@
         </field>
     </record>
     <record id="genre_action" model="ir.actions.act_window">
-        <field name="name">Genre</field>
+        <field name="name">Gêneros</field>
         <field name="res_model">genre</field>
         <field name="view_mode">tree,form</field>
     </record>
     <menuitem id="debook_menu" name="deBook" web_icon="debook,static/description/icon.png"/>
-    <menuitem id="book_menu" name="Books" parent="debook_menu" sequence="1"/>
-    <menuitem id="genre_sub_menu" action="genre_action" name="Genre" parent="book_menu" sequence="3"/>
+    <menuitem id="book_menu" name="Livros" parent="debook_menu" sequence="1"/>
+    <menuitem id="genre_sub_menu" action="genre_action" name="Gêneros" parent="book_menu" sequence="3"/>
 </odoo>

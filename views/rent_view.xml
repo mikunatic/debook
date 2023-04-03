@@ -11,6 +11,10 @@
                         <field name="book_id" options="{'no_open':True,'no_create':True,'no_create_edit':True}"/>
                         <field name="expire_selection"/>
                         <field name="date_time_fixed"/>
+<!--                        <widget name="web_ribbon"-->
+<!--                            title="Vencida"-->
+<!--                            bg_color="bg-danger"/>-->
+<!--                            attrs="{'invisible':[('state','!=','expired')]}"-->
                     </group>
                 </sheet>
             </form>
@@ -28,10 +32,10 @@
         </field>
     </record>
     <record id="rent_action" model="ir.actions.act_window">
-        <field name="name">Rent</field>
+        <field name="name">Aluguéis</field>
         <field name="res_model">rent</field>
         <field name="view_mode">tree,form</field>
     </record>
     <menuitem id="debook_menu" name="deBook" web_icon="debook,static/description/icon.png"/>
-    <menuitem id="rent_sub_menu" action="rent_action" name="Rent" parent="debook_menu" sequence="3"/>
+    <menuitem id="rent_sub_menu" action="rent_action" name="Aluguel de Livros" parent="debook_menu" sequence="3"/>
 </odoo>
