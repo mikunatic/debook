@@ -13,11 +13,12 @@
                             <field name="publisher_id" options="{'no_create':True, 'no_create_edit':True}"/>
                             <field name="year"/>
                             <field name="synopsis"/>
+                            <field name="quantity" />
+                            <field name="available_quantity" />
                         </group>
                         <group>
                             <field name="book_cover" widget="image" style="display: block;"/>
                             <p></p>
-                            <field name="quantity"/>
                         </group>
                     </group>
                     <notebook>
