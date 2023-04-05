@@ -9,7 +9,7 @@
                     <div style="align: right" class="oe_button_box">
                         <button name="return_book" type="object" string="Devolvido"
                                 icon="fa-check" class="oe_stat_button"
-                                attrs="{'invisible':[('state','!=','pending')]}"/>
+                                attrs="{'invisible':['|',('state','=','returned'),('state','=',False)]}"/>
                     </div>
                     <widget name="web_ribbon"
                         title="Alugado"
@@ -29,9 +29,8 @@
                             <field name="book_id" options="{'no_create':True,'no_create_edit':True}"/>
                         </group>
                         <group>
-                            <field name="expire_selection"/>
-                            <field name="expire_date" invisible="1"/>
-                            <field name="date_time_fixed" attrs="{'invisible':[('expire_selection','=',False)]}"/>
+                            <field name="expire_date"/>
+                            <field name="date_time_fixed" attrs="{'invisible':[('expire_date','=',False)]}" force_save="1"/>
                             <field name="state" invisible="1"/>
                         </group>
                     </group>
@@ -47,7 +46,8 @@
                 <field name="customer_id"/>
                 <field name="book_id"/>
                 <field name="date_time_fixed"/>
-                <field name="state"/>
+                <field name="state" decoration-success="(state == 'returned')"
+                       decoration-info="(state == 'rented')" decoration-danger="(state == 'pending')" widget="badge"/>
             </tree>
         </field>
     </record>

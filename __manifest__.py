@@ -23,6 +23,7 @@
         'data/genres.xml',
         'data/authors.xml',
         'data/publishers.xml',
+        'data/customers.xml',
     ],
     'application': True,
     'license': 'LGPL-3',

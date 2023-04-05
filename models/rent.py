@@ -1,5 +1,5 @@
 from odoo import fields, models, api
-import datetime
+from datetime import timedelta
 
 
 class Rent(models.Model):
@@ -7,53 +7,34 @@ class Rent(models.Model):
 
     customer_id = fields.Many2one('customer', string="Cliente")
     book_id = fields.Many2one('book', string="Livro", domain="[('rent_id','=',False)]")
-    expire_selection = fields.Selection([('fortnight', '15 dias'),
-                                         ('one_month', '1 mês'),
-                                         ('two_months','2 meses')], string="Seleção de Vencimento")
-    expire_date = fields.Datetime()
-    date_time_fixed = fields.Datetime(string="Data de Vencimento")
-    state = fields.Selection([('rented','Alugado'),
-                              ('pending','Devolução Pendente'),
-                              ('returned','Devolvido'),
-                              ], compute="expire")
+    expire_date = fields.Selection([('15', '15 dias'),
+                                    ('30', '1 mês'),
+                                    ('60', '2 meses')], string="Seleção de Vencimento")
+    date_time_fixed = fields.Date(string="Data de Vencimento", readonly=1)
+    state = fields.Selection([('rented', 'Alugado'),
+                              ('pending', 'Devolução Pendente'),
+                              ('returned', 'Devolvido')],
+                             compute="expire", store=True)
 
     # fazer função que calcula a data de vencimento de acordo com o selection
-    @api.onchange('expire_selection')
+    @api.onchange('expire_date')
     def calculate_expire(self):
-        for rec in self:
-            if rec.expire_selection == 'fortnight':
-                date = datetime.datetime.now() + datetime.timedelta(days=15)
-                date = date.replace(hour=0, minute=0, second=0, microsecond=0)
-                date += datetime.timedelta(hours=17)
-                rec.expire_date = date
-            elif rec.expire_selection == 'one_month':
-                date = datetime.datetime.now() + datetime.timedelta(days=30)
-                date = date.replace(hour=0, minute=0, second=0, microsecond=0)
-                date += datetime.timedelta(hours=17)
-                rec.expire_date = date
-            else:
-                date = datetime.datetime.now() + datetime.timedelta(days=60)
-                date = date.replace(hour=0, minute=0, second=0, microsecond=0)
-                date += datetime.timedelta(hours=17)
-                rec.expire_date = date
-            rec.date_time_fixed = rec.expire_date + datetime.timedelta(hours=3)
+        if self.expire_date:
+            self.date_time_fixed = fields.Date.today()
+            self.date_time_fixed += timedelta(int(self.expire_date))
 
     @api.model
     def create(self, vals_list):
         vals_list['state'] = 'rented'
         return super(Rent, self).create(vals_list)
 
-    @api.depends('expire_date')
+    @api.depends('date_time_fixed')
     def expire(self):
         for rec in self:
-            now = datetime.datetime.now()
-            expire_date = rec.expire_date
-            if now > expire_date:
-                rec.state = 'pending'
-            elif rec.state == 'returned':
-                break
-            elif now < expire_date:
-                rec.state = 'rented'
+            if rec.date_time_fixed and rec.state:
+                now = fields.Date.today()
+                if now >= rec.date_time_fixed and rec.state != 'returned':
+                    rec.state = 'pending'
 
     def return_book(self):
         for rec in self:
