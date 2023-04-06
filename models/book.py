@@ -14,11 +14,15 @@ class Book(models.Model):
     synopsis = fields.Text("Sinopse")
     rent_ids = fields.One2many(comodel_name="rent", inverse_name="book_id", readonly=True, string="Aluguéis")
     quantity = fields.Integer(string="Quantidade")
-    available_quantity = fields.Integer("Quantidade Disponível", compute="calculate_available_books", store=True)
+    available_quantity = fields.Integer("Quantidade Disponível")
+    available_book = fields.Boolean(compute="_calculate_available_books")
 
     #QUANDO O LIVRO É DEVOLVIDO, O CAMPO DE QUANTIDADE DISPONÍVEL NÃO MUDA!!!!!
-    @api.depends('quantity', 'rent_ids')
-    def calculate_available_books(self):
+    def _calculate_available_books(self):
         for rec in self:
             rents = rec.rent_ids.filtered(lambda rent: rent.state != 'returned')
             rec.available_quantity = (rec.quantity - len(rents))
+            if rec.available_quantity > 0:
+                rec.available_book = True
+            else:
+                rec.available_book = False
