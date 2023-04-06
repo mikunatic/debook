@@ -3,19 +3,19 @@
         <record id='publisher1' model='publisher'>
             <field name='name'>Carambaia</field>
         </record>
-        <record id='publisher1' model='publisher'>
+        <record id='publisher2' model='publisher'>
             <field name='name'>Companhia da Letras</field>
         </record>
-        <record id='publisher1' model='publisher'>
+        <record id='publisher3' model='publisher'>
             <field name='name'>Aleph</field>
         </record>
-        <record id='publisher1' model='publisher'>
+        <record id='publisher4' model='publisher'>
             <field name='name'>Suma</field>
         </record>
-        <record id='publisher1' model='publisher'>
+        <record id='publisher5' model='publisher'>
             <field name='name'>Editora Intrínseca</field>
         </record>
-        <record id='publisher1' model='publisher'>
+        <record id='publisher6' model='publisher'>
             <field name='name'>Grupo Editorial Record</field>
         </record>
     </data>
