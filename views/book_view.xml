@@ -26,7 +26,7 @@
                             <field name="genre_ids" readonly="1"/>
                         </page>
                         <page id="rents" string="Aluguéis">
-                            <field name="rent_id"/>
+                            <field name="rent_ids"/>
                         </page>
                     </notebook>
                 </sheet>

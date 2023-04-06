@@ -15,6 +15,7 @@ class Rent(models.Model):
                               ('pending', 'Devolução Pendente'),
                               ('returned', 'Devolvido')],
                              compute="expire", store=True)
+    is_expired = fields.Boolean(compute="_compute_is_expired")
 
     # fazer função que calcula a data de vencimento de acordo com o selection
     @api.onchange('expire_date')
@@ -28,13 +29,18 @@ class Rent(models.Model):
         vals_list['state'] = 'rented'
         return super(Rent, self).create(vals_list)
 
-    @api.depends('date_time_fixed')
-    def expire(self):
+    def _compute_is_expired(self):
         for rec in self:
             if rec.date_time_fixed and rec.state:
                 now = fields.Date.today()
                 if now >= rec.date_time_fixed and rec.state != 'returned':
+                    rec.is_expired = True
+                elif now < rec.date_time_fixed and rec.state != 'returned':
+                    rec.is_expired = False
+                if rec.is_expired == True:
                     rec.state = 'pending'
+                elif rec.is_expired == False and rec.state != 'returned':
+                    rec.state = 'rented'
 
     def return_book(self):
         for rec in self:

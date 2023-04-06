@@ -13,8 +13,8 @@
     'depends': ['base'],
     'data': [
         'security/ir.model.access.csv',
-        'views/publisher_view.xml',
         'wizard/book_registry_view.xml',
+        'views/publisher_view.xml',
         'views/author_view.xml',
         'views/genre_view.xml',
         'views/book_view.xml',
