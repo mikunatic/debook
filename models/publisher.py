@@ -4,7 +4,7 @@ from odoo import fields, models
 class Publisher(models.Model):
     _name='publisher'
 
-    name = fields.Char("Editora")
+    name = fields.Char("Editora", required=True)
     book_ids = fields.Many2many('book', compute="populate_books", string="Livros")
 
     def populate_books(self):

@@ -4,7 +4,7 @@ from odoo import fields, models
 class Genre(models.Model):
     _name = 'genre'
 
-    name = fields.Char("Gênero")
+    name = fields.Char("Gênero", required=True)
     book_ids = fields.Many2many('book', compute="populate_books", string="Livros")
 
     def populate_books(self):

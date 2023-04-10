@@ -5,11 +5,11 @@ from datetime import timedelta
 class Rent(models.Model):
     _name = 'rent'
 
-    customer_id = fields.Many2one('customer', string="Cliente")
-    book_id = fields.Many2one('book', string="Livro", domain="[('available_quantity','>',0)]")
+    customer_id = fields.Many2one('customer', string="Cliente", required=True)
+    book_id = fields.Many2one('book', string="Livro", domain="[('available_quantity','>',0)]", required=True)
     expire_date = fields.Selection([('15', '15 dias'),
                                     ('30', '1 mês'),
-                                    ('60', '2 meses')], string="Seleção de Vencimento")
+                                    ('60', '2 meses')], string="Seleção de Vencimento", required=True)
     date_time_fixed = fields.Date(string="Data de Vencimento", readonly=1)
     state = fields.Selection([('rented', 'Alugado'),
                               ('pending', 'Devolução Pendente'),

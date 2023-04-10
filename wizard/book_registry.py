@@ -4,14 +4,14 @@ from odoo import fields, models, _
 class BookRegistry(models.TransientModel):
     _name = 'book.registry'
 
-    book_title = fields.Char(string="Título do Livro")
-    book_author = fields.Many2one('author', string="Autor do Livro")
-    book_publisher = fields.Many2one('publisher', string="Editora do Livro")
-    book_genre = fields.Many2many(comodel_name='genre', relation="registry_genre_rel", string="Gêneros do Livro")
-    book_quantity = fields.Integer(default=1, string="Quantidade")
-    book_cover = fields.Binary("Capa do Livro")
-    book_year = fields.Integer("Ano de Lançamento")
-    book_synopsis = fields.Text("Sinopse")
+    book_title = fields.Char(string="Título do Livro", required=True)
+    book_author = fields.Many2one('author', string="Autor do Livro", required=True)
+    book_publisher = fields.Many2one('publisher', string="Editora do Livro", required=True)
+    book_genre = fields.Many2many(comodel_name='genre', relation="registry_genre_rel", string="Gêneros do Livro", required=True)
+    book_quantity = fields.Integer(default=1, string="Quantidade", required=True)
+    book_cover = fields.Binary("Capa do Livro", required=True)
+    book_year = fields.Integer("Ano de Lançamento", required=True)
+    book_synopsis = fields.Text("Sinopse", required=True)
 
     def register_book(self):
         book_vals_list = {
