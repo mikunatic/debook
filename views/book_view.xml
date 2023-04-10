@@ -4,13 +4,17 @@
         <field name="name">Book</field>
         <field name="model">book</field>
         <field name="arch" type="xml">
-            <form>
+            <form create="false">
+                <header>
+                    <button name="update_quantity" type="object" string="Atualizar Quantidade"
+                    class="btn btn-primary"/>
+                </header>
                 <sheet>
                     <group>
                             <field name="title" style="text-align: center; font-weight: bold" nolabel="1"/>
                         <group>
-                            <field name="author_id" options="{'no_create':True, 'no_create_edit':True}"/>
-                            <field name="publisher_id" options="{'no_create':True, 'no_create_edit':True}"/>
+                            <field name="author_id" options="{'no_create':True, 'no_create_edit':True, 'no_open':True}"/>
+                            <field name="publisher_id" options="{'no_create':True, 'no_create_edit':True, 'no_open':True}"/>
                             <field name="year"/>
                             <field name="synopsis"/>
                             <field name="quantity" />
@@ -19,15 +23,14 @@
                         </group>
                         <group>
                             <field name="book_cover" widget="image" style="display: block;"/>
-                            <p></p>
                         </group>
                     </group>
                     <notebook>
                         <page id="genres" string="Gêneros">
-                            <field name="genre_ids" readonly="1"/>
+                            <field name="genre_ids" readonly="1" options="{'no_create':True, 'no_create_edit':True, 'no_open':True}"/>
                         </page>
                         <page id="rents" string="Aluguéis">
-                            <field name="rent_ids"/>
+                            <field name="rent_ids" readonly="1" options="{'no_create':True, 'no_create_edit':True, 'no_open':True}"/>
                         </page>
                     </notebook>
                 </sheet>

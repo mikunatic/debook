@@ -13,11 +13,10 @@ class Book(models.Model):
     year = fields.Integer("Ano de Lançamento")
     synopsis = fields.Text("Sinopse")
     rent_ids = fields.One2many(comodel_name="rent", inverse_name="book_id", readonly=True, string="Aluguéis")
-    quantity = fields.Integer(string="Quantidade")
-    available_quantity = fields.Integer("Quantidade Disponível")
+    quantity = fields.Integer(string="Quantidade", readonly=True)
+    available_quantity = fields.Integer("Quantidade Disponível", readonly=True)
     available_book = fields.Boolean(compute="_calculate_available_books")
 
-    #QUANDO O LIVRO É DEVOLVIDO, O CAMPO DE QUANTIDADE DISPONÍVEL NÃO MUDA!!!!!
     def _calculate_available_books(self):
         for rec in self:
             rents = rec.rent_ids.filtered(lambda rent: rent.state != 'returned')
@@ -26,3 +25,6 @@ class Book(models.Model):
                 rec.available_book = True
             else:
                 rec.available_book = False
+
+    def update_quantity(self):
+        return self.env['ir.actions.act_window']._for_xml_id("deBook.update_quantity_action")

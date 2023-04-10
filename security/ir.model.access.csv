@@ -6,4 +6,4 @@ book_registry,book_registry,model_book_registry,base.group_user,1,1,1,1
 genre,genre,model_genre,base.group_user,1,1,1,1
 customer,customer,model_customer,base.group_user,1,1,1,1
 rent,rent,model_rent,base.group_user,1,1,1,1
-
+update_quantity,update_quantity,model_update_quantity,base.group_user,1,1,1,1

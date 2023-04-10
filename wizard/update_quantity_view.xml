@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="update_quantity_form_view" model="ir.ui.view">
+        <field name="name">Atualizar Quantidade</field>
+        <field name="model">update.quantity</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <field name="quantity"/>
+                </group>
+                <footer>
+                    <button name="save_updated_quantity" type="object" string="Atualizar" class="btn btn-primary"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+    <record id="update_quantity_action" model="ir.actions.act_window">
+        <field name="name">Atualizar Quantidade</field>
+        <field name="res_model">update.quantity</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+</odoo>

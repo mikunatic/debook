@@ -14,6 +14,7 @@
     'data': [
         'security/ir.model.access.csv',
         'wizard/book_registry_view.xml',
+        'wizard/update_quantity_view.xml',
         'views/publisher_view.xml',
         'views/author_view.xml',
         'views/genre_view.xml',
