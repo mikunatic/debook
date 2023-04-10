@@ -25,7 +25,7 @@
                         </page>
                     </notebook>
                 <footer>
-                    <button name="register_book" type="object" string="Register" class="btn btn-primary"/>
+                    <button name="register_book" type="object" string="Cadastrar" class="btn btn-primary"/>
                 </footer>
             </form>
         </field>
