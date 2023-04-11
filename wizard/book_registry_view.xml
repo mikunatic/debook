@@ -7,7 +7,7 @@
             <form>
                 <group>
                     <field name="book_title" style="text-align: center"
-                           nolabel="1" placeholder="Book Title"/>
+                           nolabel="1" placeholder="Título do Livro"/>
                     <group>
                         <field name="book_author" options="{'no_create':True, 'no_create_edit':True, 'no_open': True}"/>
                         <field name="book_publisher" options="{'no_create':True, 'no_create_edit':True, 'no_open': True}"/>
@@ -20,12 +20,12 @@
                     </group>
                 </group>
                     <notebook>
-                        <page id="genres" string="Genres">
+                        <page id="genres" string="Gêneros">
                             <field name="book_genre" options="{'no_create':True, 'no_create_edit':True}"/>
                         </page>
                     </notebook>
                 <footer>
-                    <button name="register_book" type="object" string="Register" class="btn btn-primary"/>
+                    <button name="register_book" type="object" string="Cadastrar" class="btn btn-primary"/>
                 </footer>
             </form>
         </field>
