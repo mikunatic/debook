@@ -1,5 +1,5 @@
 from odoo import fields, models
-import random
+from random import choice
 
 class Recommender(models.TransientModel):
     _name = 'recommender'
@@ -24,7 +24,7 @@ class Recommender(models.TransientModel):
             domain.append(('author_id','=',self.author_id.id))
             domain.append(('available_quantity', '>', 0))
         book_ids = self.env['book'].search(domain).ids
-        choosed_book = random.choice(book_ids)
+        choosed_book = choice(book_ids)
         ctx = dict()
         ctx.update({
             'default_book_id': choosed_book,
