@@ -1,0 +1,53 @@
+<odoo>
+    <data noupdate="1">
+        <record id='book1' model='book'>
+            <field name='title'>Me Chame Pelo Seu Nome</field>
+            <field name='author_id'>6</field>
+            <field name='publisher_id'>1</field>
+            <field name='genre_ids' eval="[(6,0,[1])]"/>
+            <field name='year'>2007</field>
+            <field name='synopsis'>Bastante elogiado e premiado com o Lambda Literary Award, Me Chame Pelo Seu Nome conta a história de um daqueles grandes amores de verão que perduram. Ambientado na Itália durante os anos 1980, conta como Elio, um rapaz de 17 anos, se apaixona por Oliver, um acadêmico que o pai de Elio recebe em casa para passar o verão e lhe ajudar em suas pesquisas.</field>
+            <field name='quantity'>10</field>
+        </record>
+
+        <record id='book2' model='book'>
+            <field name='title'>Americanah</field>
+            <field name='author_id'>7</field>
+            <field name='publisher_id'>2</field>
+            <field name='genre_ids' eval="[(6,0,[1])]"/>
+            <field name='year'>2013</field>
+            <field name='synopsis'>Eleito um dos melhores livros de 2013 pelo jornal The New York Times, Americanah conta a história de Ifemelu, uma jovem nigeriana que se muda para os Estados Unidos para estudar. A mudança não é fácil. Além do preconceito, Ifemelu tem de lidar com a dor de se afastar de Obinze, seu grande amor.</field>
+            <field name='quantity'>10</field>
+        </record>
+
+        <record id='book3' model='book'>
+            <field name='title'>Um dia</field>
+            <field name='author_id'>8</field>
+            <field name='publisher_id'>3</field>
+            <field name='genre_ids' eval="[(6,0,[1])]"/>
+            <field name='year'>2009</field>
+            <field name='synopsis'>15 de julho de 1988 é o dia em que Dexter Mayhew e Emma Morley se conheceram. O livro de David Nicholls, vencedor do Galaxy National Book Awards como ficção mais popular de 2010, conta a história de amor de Dexter e Emma ao longo de 20 anos, avançando sempre por essa mesma data nos anos seguintes. Uma bela história que nos faz lembrar como os dias especiais merecem ser celebrados.</field>
+            <field name='quantity'>10</field>
+        </record>
+
+        <record id='book4' model='book'>
+            <field name='title'>Simplesmente acontece</field>
+            <field name='author_id'>9</field>
+            <field name='publisher_id'>4</field>
+            <field name='genre_ids' eval="[(6,0,[1])]"/>
+            <field name='year'>2014</field>
+            <field name='synopsis'>Uma história tão verdadeiramente possível que você até pode pensar que poderia ter acontecido com você. O que não a deixa menos emocionante. Rosie e Alex são amigos desde a infância, todos achavam que eles eram feitos um para o outro, menos eles dois. Os acontecimentos da vida os afastam e os unem em diferentes momentos, sem que eles consigam definir se são apenas amigos ou mais do que isso.</field>
+            <field name='quantity'>10</field>
+        </record>
+
+        <record id='book5' model='book'>
+            <field name='title'>Como Eu Era Antes de Você</field>
+            <field name='author_id'>10</field>
+            <field name='publisher_id'>5</field>
+            <field name='genre_ids' eval="[(6,0,[1])]"/>
+            <field name='year'>2012</field>
+            <field name='synopsis'>Lou Clark é uma pessoa cheia de esperança e positividade. Ela leva uma vida simples, ajudando a família com as despesas e tem um namorado de longa data. Quando perde o emprego como garçonete, recebe uma proposta de se tornar a cuidadora de Will Traynor, um charmoso ex-banqueiro que está paralisado desde que sofreu um acidente de moto há dois anos. O amor que nasce entre os dois é transformador para Lou e lhe dá um novo olhar sobre a vida.</field>
+            <field name='quantity'>10</field>
+        </record>
+    </data>
+</odoo>

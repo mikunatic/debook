@@ -15,5 +15,20 @@
         <record id='author5' model='author'>
             <field name='name'>Clarice Lispector</field>
         </record>
+        <record id='author6' model='author'>
+            <field name='name'>André Aciman</field>
+        </record>
+        <record id='author7' model='author'>
+            <field name='name'>Chimamanda Ngozi Adichie</field>
+        </record>
+        <record id='author8' model='author'>
+            <field name='name'>David Nicholls</field>
+        </record>
+        <record id='author9' model='author'>
+            <field name='name'>Cecelia Ahern</field>
+        </record>
+        <record id='author10' model='author'>
+            <field name='name'>Jojo Moyes</field>
+        </record>
     </data>
 </odoo>

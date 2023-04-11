@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="recommender_form_view" model="ir.ui.view">
+        <field name="name">Recomendador de Livros</field>
+        <field name="model">recommender</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <field name="filter" attrs="{'invisible':[('hide_filter','=',True)]}"/>
+                    <field name="hide_filter" invisible="1"/>
+                    <field name="genre_id" attrs="{'invisible':['|',('filter','=','author'),('filter','=',False)]}"
+                    options="{'no_create':True, 'no_create_edit':True, 'no_open':True}"/>
+                    <field name="author_id" attrs="{'invisible':['|',('filter','=','genre'),('filter','=',False)]}"
+                    options="{'no_create':True, 'no_create_edit':True, 'no_open':True}"/>
+                    <field name="book_id" attrs="{'invisible':[('book_id','=',False)]}"
+                    options="{'no_create':True, 'no_create_edit':True, 'no_open':True}"/>
+                    <field name="book_synopsis" attrs="{'invisible':[('book_id','=',False)]}"/>
+                </group>
+                <footer>
+                    <button name="show_book" type="object" string="Sortear"
+                            attrs="{'invisible':[('filter','=',False)]}" class="btn btn-primary"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+    <record id="recommender_action" model="ir.actions.act_window">
+        <field name="name">Recomendador de Livros</field>
+        <field name="res_model">recommender</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+    <menuitem id="debook_menu" name="deBook"/>
+    <menuitem id="configuration_menu" name="Configuração" parent="debook_menu"/>
+    <menuitem id="recommender_sub_menu" action="recommender_action" name="Recomendador" parent="configuration_menu"/>
+</odoo>

@@ -27,7 +27,7 @@
                     </group>
                     <notebook>
                         <page id="genres" string="Gêneros">
-                            <field name="genre_ids" readonly="1" options="{'no_create':True, 'no_create_edit':True, 'no_open':True}"/>
+                            <field name="genre_ids" options="{'no_create':True, 'no_create_edit':True, 'no_open':True}"/>
                         </page>
                         <page id="rents" string="Aluguéis">
                             <field name="rent_ids" readonly="1" options="{'no_create':True, 'no_create_edit':True, 'no_open':True}"/>
