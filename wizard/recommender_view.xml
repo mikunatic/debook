@@ -6,15 +6,20 @@
         <field name="arch" type="xml">
             <form>
                 <group>
-                    <field name="filter" attrs="{'invisible':[('hide_filter','=',True)]}"/>
-                    <field name="hide_filter" invisible="1"/>
-                    <field name="genre_id" attrs="{'invisible':['|',('filter','=','author'),('filter','=',False)]}"
-                    options="{'no_create':True, 'no_create_edit':True, 'no_open':True}"/>
-                    <field name="author_id" attrs="{'invisible':['|',('filter','=','genre'),('filter','=',False)]}"
-                    options="{'no_create':True, 'no_create_edit':True, 'no_open':True}"/>
-                    <field name="book_id" attrs="{'invisible':[('book_id','=',False)]}"
-                    options="{'no_create':True, 'no_create_edit':True, 'no_open':True}"/>
-                    <field name="book_synopsis" attrs="{'invisible':[('book_id','=',False)]}"/>
+                    <group>
+                        <field name="filter" attrs="{'invisible':[('hide_filter','=',True)]}"/>
+                        <field name="hide_filter" invisible="1"/>
+                        <field name="genre_id" attrs="{'invisible':['|',('filter','=','author'),('filter','=',False)]}"
+                        options="{'no_create':True, 'no_create_edit':True, 'no_open':True}"/>
+                        <field name="author_id" attrs="{'invisible':['|',('filter','=','genre'),('filter','=',False)]}"
+                        options="{'no_create':True, 'no_create_edit':True, 'no_open':True}"/>
+                        <field name="book_id" attrs="{'invisible':[('book_id','=',False)]}"
+                        options="{'no_create':True, 'no_create_edit':True, 'no_open':True}"/>
+                        <field name="book_synopsis" attrs="{'invisible':[('book_id','=',False)]}"/>
+                    </group>
+                    <group>
+                        <field name="book_cover" attrs="{'invisible':[('book_id','=',False)]}" widget="image"/>
+                    </group>
                 </group>
                 <footer>
                     <button name="show_book" type="object" string="Sortear"
