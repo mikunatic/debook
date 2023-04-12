@@ -36,7 +36,7 @@ class Recommender(models.TransientModel):
             'view_type': 'form',
             'view_mode': 'form',
             'res_model': 'recommender',
-            'views': [[self.env.ref("deBook.recommender_form_view").id, 'form']],
+            'views': [[self.env.ref("debook.recommender_form_view").id, 'form']],
             'context': ctx,
             'target': 'new'
         }
