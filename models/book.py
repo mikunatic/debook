@@ -25,6 +25,3 @@ class Book(models.Model):
                 rec.available_book = True
             else:
                 rec.available_book = False
-
-    def update_quantity(self):
-        return self.env['ir.actions.act_window']._for_xml_id("deBook.update_quantity_action")

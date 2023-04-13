@@ -6,7 +6,7 @@
         <field name="arch" type="xml">
             <form create="false">
                 <header>
-                    <button name="update_quantity" type="object" string="Atualizar Quantidade"
+                    <button name="debook.update_quantity_action" type="action" string="Atualizar Quantidade"
                     class="btn btn-primary"/>
                 </header>
                 <sheet>
@@ -56,7 +56,7 @@
         <field name="res_model">book</field>
         <field name="view_mode">tree,form</field>
     </record>
-    <menuitem id="debook_menu" name="deBook" web_icon="debook,static/description/icon.png"/>
+    <menuitem id="debook_menu" name="deBook" web_icon="debook,static/description/icon.png" sequence="1"/>
     <menuitem id="book_menu" name="Livros" parent="debook_menu" sequence="1"/>
     <menuitem id="book_sub_menu" action="book_action" name="Livros" parent="book_menu" sequence="1"/>
 </odoo>
