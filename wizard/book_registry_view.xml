@@ -9,8 +9,8 @@
                     <field name="book_title" style="text-align: center"
                            nolabel="1" placeholder="Título do Livro"/>
                     <group>
-                        <field name="book_author" options="{'no_create':True, 'no_create_edit':True, 'no_open': True}"/>
-                        <field name="book_publisher" options="{'no_create':True, 'no_create_edit':True, 'no_open': True}"/>
+                        <field name="book_author" options="{'no_create_edit':True, 'no_open': True}"/>
+                        <field name="book_publisher" options="{'no_create_edit':True, 'no_open': True}"/>
                         <field name="book_year"/>
                         <field name="book_synopsis"/>
                         <field name="book_quantity"/>
@@ -21,7 +21,7 @@
                 </group>
                     <notebook>
                         <page id="genres" string="Gêneros">
-                            <field name="book_genre" options="{'no_create':True, 'no_create_edit':True}"/>
+                            <field name="book_genre" options="{'no_create_edit':True}"/>
                         </page>
                     </notebook>
                 <footer>

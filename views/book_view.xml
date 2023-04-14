@@ -7,11 +7,11 @@
             <form create="false">
                 <header>
                     <button name="debook.update_quantity_action" type="action" string="Atualizar Quantidade"
-                    class="btn btn-primary"/>
+                            class="btn btn-primary"/>
                 </header>
                 <sheet>
                     <group>
-                            <field name="title" style="text-align: center; font-weight: bold" nolabel="1"/>
+                        <field name="title" style="text-align: center; font-weight: bold" nolabel="1"/>
                         <group>
                             <field name="author_id" options="{'no_create':True, 'no_create_edit':True, 'no_open':True}"/>
                             <field name="publisher_id" options="{'no_create':True, 'no_create_edit':True, 'no_open':True}"/>
@@ -37,12 +37,12 @@
             </form>
         </field>
     </record>
+
     <record id="book_list_view" model="ir.ui.view">
         <field name="name">Book</field>
         <field name="model">book</field>
         <field name="arch" type="xml">
             <tree create="false">
-                <field name="id"/>
                 <field name="title"/>
                 <field name="author_id"/>
                 <field name="publisher_id"/>
@@ -51,10 +51,46 @@
             </tree>
         </field>
     </record>
+
+    <record id="book_kanban_view" model="ir.ui.view">
+        <field name="name">Book</field>
+        <field name="model">book</field>
+        <field name="arch" type="xml">
+            <kanban create="false">
+                <field name="id"/>
+                <field name="title"/>
+                <field name="author_id"/>
+                <field name="publisher_id"/>
+                <field name="book_cover" widget="image"/>
+                <field name="genre_ids" widget="many2many_tags"/>
+                <field name="available_book" invisible="1"/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class="oe_kanban_global_click o_kanban_record_has_image_fill">
+                            <div class="o_kanban_image d-none d-md-block"
+                            t-attf-style="background-image:url('#{kanban_image('book','book_cover',record.id.raw_value, placeholder)}')">
+                            </div>
+                            <div class="oe_kanban_details d-flex flex-column">
+                                <strong>
+                                    <field name="title"/>
+                                </strong>
+                                <ul>
+                                    <li>Autor(a): <field name="author_id"/></li>
+                                    <li>Editora: <field name="publisher_id"/></li>
+                                    <li>Gêneros: <field name="genre_ids"/></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
     <record id="book_action" model="ir.actions.act_window">
         <field name="name">Livros</field>
         <field name="res_model">book</field>
-        <field name="view_mode">tree,form</field>
+        <field name="view_mode">kanban,form</field>
     </record>
     <menuitem id="debook_menu" name="deBook" web_icon="debook,static/description/icon.png" sequence="1"/>
     <menuitem id="book_menu" name="Livros" parent="debook_menu" sequence="1"/>
