@@ -7,7 +7,7 @@
             <field name='genre_ids' eval="[(6,0,[1])]"/>
             <field name='year'>2007</field>
             <field name='synopsis'>Bastante elogiado e premiado com o Lambda Literary Award, Me Chame Pelo Seu Nome conta a história de um daqueles grandes amores de verão que perduram. Ambientado na Itália durante os anos 1980, conta como Elio, um rapaz de 17 anos, se apaixona por Oliver, um acadêmico que o pai de Elio recebe em casa para passar o verão e lhe ajudar em suas pesquisas.</field>
-            <field name='quantity'>10</field>
+            <field name='quantity'>1</field>
         </record>
 
         <record id='book2' model='book'>
