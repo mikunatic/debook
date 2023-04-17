@@ -14,7 +14,7 @@ class Rent(models.Model):
     state = fields.Selection([('rented', 'Alugado'),
                               ('pending', 'Devolução Pendente'),
                               ('returned', 'Devolvido')],
-                             compute="expire", store=True, string="Estado")
+                             compute="expire", store=True, string="Status")
     is_expired = fields.Boolean(compute="_compute_is_expired")
 
     # fazer função que calcula a data de vencimento de acordo com o selection

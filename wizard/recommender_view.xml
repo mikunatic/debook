@@ -9,9 +9,9 @@
                     <group>
                         <field name="filter" attrs="{'invisible':[('hide_filter','=',True)]}"/>
                         <field name="hide_filter" invisible="1"/>
-                        <field name="genre_id" attrs="{'invisible':['|',('filter','=','author'),('filter','=',False)]}"
+                        <field name="genre_id" attrs="{'invisible':['|',('filter','=','author'),('filter','=',False)],'required':[('filter','=','genre')]}"
                         options="{'no_create':True, 'no_create_edit':True, 'no_open':True}"/>
-                        <field name="author_id" attrs="{'invisible':['|',('filter','=','genre'),('filter','=',False)]}"
+                        <field name="author_id" attrs="{'invisible':['|',('filter','=','genre'),('filter','=',False)],'required':[('filter','=','author')]}"
                         options="{'no_create':True, 'no_create_edit':True, 'no_open':True}"/>
                         <field name="book_id" attrs="{'invisible':[('book_id','=',False)]}"
                         options="{'no_create':True, 'no_create_edit':True, 'no_open':True}"/>

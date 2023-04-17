@@ -6,7 +6,7 @@ class Recommender(models.TransientModel):
 
     filter = fields.Selection([('genre','Gênero'),
                                ('author','Autor')],
-                              string="Escolher como sortear")
+                              string="Escolher como sortear", required=True)
     genre_id = fields.Many2one('genre', string="Gênero")
     author_id = fields.Many2one('author', string="Autor")
     book_id = fields.Many2one('book', string="Livro Sorteado", readonly=True)
