@@ -1,4 +1,5 @@
 from odoo import fields, models, api
+import requests
 
 
 class Customer(models.Model):
@@ -10,6 +11,16 @@ class Customer(models.Model):
     city = fields.Many2one('res.city', string="Cidade", required=True, domain=[('state_id','=',95)])
     cep = fields.Char("CEP", required=True)
     rent_ids = fields.One2many(comodel_name="rent", inverse_name="customer_id", readonly=True)
+
+    @api.onchange('cep')
+    def onchange_cep(self):
+        if self.cep:
+            url = f'https://viacep.com.br/ws/{self.cep}/json/'
+            response = requests.get(url)
+            if response.status_code == 200:
+                data = response.json()
+                self.city = data.get('localidade', '')
+                self.cep = data.get('cep', '')
 
     # @api.model
     # def create(self, vals_list):

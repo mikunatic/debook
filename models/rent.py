@@ -7,6 +7,8 @@ class Rent(models.Model):
 
     customer_id = fields.Many2one('customer', string="Cliente", required=True)
     book_id = fields.Many2one('book', string="Livro", domain="[('available_quantity','>',0)]", required=True)
+
+    available_book = fields.Boolean(related="book_id.available_book", invisible=True)
     expire_date = fields.Selection([('15', '15 dias'),
                                     ('30', '1 mês'),
                                     ('60', '2 meses')], string="Seleção de Vencimento", required=True)

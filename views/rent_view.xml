@@ -46,6 +46,7 @@
             <tree>
                 <field name="customer_id"/>
                 <field name="book_id"/>
+                <field name="available_book"/>
                 <field name="date_time_fixed"/>
                 <field name="state" decoration-success="(state == 'returned')"
                        decoration-info="(state == 'rented')" decoration-danger="(state == 'pending')" widget="badge"/>

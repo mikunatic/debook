@@ -18,7 +18,7 @@
                         </group>
                     </group>
                     <notebook>
-                        <page id="rents" string="Aluguéis">
+                        <page id="rents" string="Aluguéis" attrs="{'invisible':[('rent_ids','=',[])]}">
                             <field name="rent_ids">
                                 <tree>
                                     <field name="customer_id"/>
