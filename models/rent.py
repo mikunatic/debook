@@ -48,3 +48,10 @@ class Rent(models.Model):
     def return_book(self):
         for rec in self:
             rec.state = 'returned'
+
+    def name_get(self):
+        result = []
+        for record in self:
+            rec_name = str(record.customer_id.name) + " - " + str(record.date_time_fixed)
+            result.append((record.id,rec_name))
+        return result

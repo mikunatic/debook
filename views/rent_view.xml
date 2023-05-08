@@ -45,6 +45,7 @@
             </form>
         </field>
     </record>
+
     <record id="rent_list_view" model="ir.ui.view">
         <field name="name">Rent</field>
         <field name="model">rent</field>
@@ -59,10 +60,37 @@
             </tree>
         </field>
     </record>
+
+    <record id="rent_view_search" model="ir.ui.view">
+        <field name="name">Filtro de Aluguéis</field>
+        <field name="model">rent</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="customer_id"/>
+                <field name="book_id"/>
+                <searchpanel>
+                    <field name="customer_id"/>
+                    <field name="book_id"/>
+                    <field name="state"/>
+                </searchpanel>
+            </search>
+        </field>
+    </record>
+
+    <record id="rent_calendar_view" model="ir.ui.view">
+        <field name="name">Calendário de Aluguéis</field>
+        <field name="model">rent</field>
+        <field name="arch" type="xml">
+            <calendar mode="month" date_start="date_time_fixed">
+                <field name="customer_id"/>
+            </calendar>
+        </field>
+    </record>
+
     <record id="rent_action" model="ir.actions.act_window">
         <field name="name">Aluguéis</field>
         <field name="res_model">rent</field>
-        <field name="view_mode">tree,form</field>
+        <field name="view_mode">tree,calendar,form</field>
     </record>
     <menuitem id="debook_menu" name="deBook" web_icon="debook,static/description/icon.png"/>
     <menuitem id="rent_sub_menu" action="rent_action" name="Aluguel de Livros" parent="debook_menu" sequence="3"/>

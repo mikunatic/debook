@@ -38,7 +38,7 @@
         </field>
     </record>
 
-    <record id="bookt_view_search" model="ir.ui.view">
+    <record id="book_view_search" model="ir.ui.view">
         <field name="name">Filtro de Livro</field>
         <field name="model">book</field>
         <field name="arch" type="xml">
@@ -51,7 +51,6 @@
                 <searchpanel>
                     <field name="author_id"/>
                     <field name="publisher_id"/>
-<!--                    <field name="genre_ids"/>-->
                 </searchpanel>
             </search>
         </field>
