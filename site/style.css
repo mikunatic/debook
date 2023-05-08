@@ -304,6 +304,7 @@
   .projetos .box .content h3{
     font-size: 3rem;
     color:#fff;
+    text-transform:none;
   }
   
   .projetos .box .content p{
