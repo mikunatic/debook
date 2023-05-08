@@ -7,9 +7,12 @@
             <form>
                 <sheet>
                     <div style="align: right" class="oe_button_box">
-                        <button name="return_book" type="object" string="Devolvido"
-                                icon="fa-check" class="oe_stat_button"
+                        <button name="return_book" type="object" string="Devolver"
+                                icon="fa-undo" class="oe_stat_button"
                                 attrs="{'invisible':['|',('state','=','returned'),('state','=',False)]}"/>
+                        <button name="undo" type="object" string="Desfazer devolução"
+                                icon="fa-undo" class="oe_stat_button"
+                                attrs="{'invisible':[('is_expired','=',False),('state','!=','returned')]}"/>
                     </div>
                     <widget name="web_ribbon"
                         title="Alugado"
@@ -37,8 +40,8 @@
                         </group>
                     </group>
                     <notebook>
-                        <page id="rents" string="Aluguéis">
-                            <field name="rent_ids" attrs="{'invisible':[('customer_id','=',False)]}"/>
+                        <page id="rents" string="Aluguéis" attrs="{'invisible':[('customer_id','=',False)]}">
+                            <field name="rent_ids"/>
                         </page>
                     </notebook>
                 </sheet>

@@ -53,5 +53,9 @@ class Rent(models.Model):
         result = []
         for record in self:
             rec_name = str(record.customer_id.name) + " - " + str(record.date_time_fixed)
-            result.append((record.id,rec_name))
+            result.append((record.id, rec_name))
         return result
+
+    def undo(self):
+        for rec in self:
+            rec.state = 'rented'
