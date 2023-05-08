@@ -235,6 +235,7 @@
     line-height: 1.8;
     padding:1rem 0;
     color:#eee;
+    text-transform:initial;
   }
 
   /* INICIO ENDS */
@@ -272,58 +273,49 @@
     padding:1rem 0;
     line-height: 1.8;
     text-align: justify;
+    text-transform:initial;
   }
 
   /* SOBRE ENDS */
 
   /* PROJETOS STARTS */
-  
-  .projetos .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap:1.5rem;
-  }
-  
-  .projetos .box-container .box{
-    text-align: center;
+
+  .projetos .box{
+    display: flex;
+    align-items: center;
     border:var(--border);
-    padding: 2rem;
+    flex-wrap:wrap;
+    height: 65vh;
   }
   
-  .projetos .box-container .box .icons a{
-    height: 5rem;
-    width: 5rem;
-    line-height: 5rem;
-    font-size: 2rem;
-    border:var(--border);
+  .projetos .box .image{
+    flex:1 1 40rem;
+  }
+  
+  .projetos .box .image img{
+    width: 85%;
+  }
+
+  .projetos .box .content{
+    flex:1 1 45rem;
+    padding:2rem;
+  }
+  
+  .projetos .box .content h3{
+    font-size: 3rem;
     color:#fff;
-    margin:.3rem;
   }
   
-  .projetos .box-container .box .icons a:hover{
-    background:var(--main-color);
-  }
-  
-  .projetos .box-container .box .image{
-    padding: 2.5rem 0;
-  }
-  
-  .projetos .box-container .box .image img{
-    height: 25rem;
-  }
-  
-  .projetos .box-container .box .content h3{
-    color:#fff;
-    font-size: 2.5rem;
-  }
-  
-  .projetos .box-container .box .content p{
-    font-size: 1.5rem;
-    line-height: 1.8;
+  .projetos .box .content p{
+    font-size: 1.6rem;
     color:#ccc;
-    padding:2rem 0;
+    padding:1rem 0;
+    line-height: 1.8;
     text-align: justify;
+    text-transform:initial;
   }
+
+  /* PROJETOS ENDS */
 
   /* INTEGRANTES STARTS */
   
@@ -345,6 +337,7 @@
     color:#ccc;
     padding:2rem 0;
     text-align: justify;
+    text-transform:initial;
   }
   
   .integrantes .box-container .box .user{
