@@ -90,7 +90,7 @@
     <record id="rent_action" model="ir.actions.act_window">
         <field name="name">Aluguéis</field>
         <field name="res_model">rent</field>
-        <field name="view_mode">tree,calendar,form</field>
+        <field name="view_mode">calendar,tree,form</field>
     </record>
     <menuitem id="debook_menu" name="deBook" web_icon="debook,static/description/icon.png"/>
     <menuitem id="rent_sub_menu" action="rent_action" name="Aluguel de Livros" parent="debook_menu" sequence="3"/>
