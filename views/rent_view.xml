@@ -27,6 +27,7 @@
                         <group>
                             <field name="customer_id" options="{'no_open':True,'no_create':True,'no_create_edit':True}"/>
                             <field name="book_id" options="{'no_open':True,'no_create':True,'no_create_edit':True}"/>
+                            <field name="available_book" invisible="True"/>
                             <field name="is_expired" invisible="1"/>
                         </group>
                         <group>
@@ -35,6 +36,11 @@
                             <field name="state" invisible="1"/>
                         </group>
                     </group>
+                    <notebook>
+                        <page id="rents" string="Aluguéis">
+                            <field name="rent_ids" attrs="{'invisible':[('customer_id','=',False)]}"/>
+                        </page>
+                    </notebook>
                 </sheet>
             </form>
         </field>
@@ -46,7 +52,6 @@
             <tree>
                 <field name="customer_id"/>
                 <field name="book_id"/>
-                <field name="available_book"/>
                 <field name="date_time_fixed"/>
                 <field name="state" decoration-success="(state == 'returned')"
                        decoration-info="(state == 'rented')" decoration-danger="(state == 'pending')" widget="badge"/>

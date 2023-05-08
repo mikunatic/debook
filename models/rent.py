@@ -6,6 +6,7 @@ class Rent(models.Model):
     _name = 'rent'
 
     customer_id = fields.Many2one('customer', string="Cliente", required=True)
+    rent_ids = fields.One2many(related='customer_id.rent_ids', string="Cliente")
     book_id = fields.Many2one('book', string="Livro", domain="[('available_quantity','>',0)]", required=True)
 
     available_book = fields.Boolean(related="book_id.available_book", invisible=True)
