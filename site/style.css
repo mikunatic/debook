@@ -4,7 +4,7 @@
     --main-color:#a83e8b;
     --black:#13131a;
     --bg:#010103;
-    --border:.1rem solid rgba(255,255,255,.3);
+    --border:.1rem solid #8b1b6e;
   }
   
   *{
@@ -246,6 +246,7 @@
     align-items: center;
     background:var(--black);
     flex-wrap: wrap;
+    height: 65vh;
   }
   
   .sobre .row .image{
@@ -270,6 +271,7 @@
     color:#ccc;
     padding:1rem 0;
     line-height: 1.8;
+    text-align: justify;
   }
 
   /* SOBRE ENDS */
@@ -320,6 +322,7 @@
     line-height: 1.8;
     color:#ccc;
     padding:2rem 0;
+    text-align: justify;
   }
 
   /* INTEGRANTES STARTS */
@@ -341,6 +344,7 @@
     line-height: 1.8;
     color:#ccc;
     padding:2rem 0;
+    text-align: justify;
   }
   
   .integrantes .box-container .box .user{
