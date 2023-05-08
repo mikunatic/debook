@@ -235,6 +235,7 @@
     line-height: 1.8;
     padding:1rem 0;
     color:#eee;
+    text-transform:initial;
   }
 
   /* INICIO ENDS */
@@ -272,6 +273,7 @@
     padding:1rem 0;
     line-height: 1.8;
     text-align: justify;
+    text-transform:initial;
   }
 
   /* SOBRE ENDS */
@@ -290,30 +292,18 @@
     padding: 2rem;
   }
   
-  .projetos .box-container .box .icons a{
-    height: 5rem;
-    width: 5rem;
-    line-height: 5rem;
-    font-size: 2rem;
-    border:var(--border);
-    color:#fff;
-    margin:.3rem;
-  }
-  
-  .projetos .box-container .box .icons a:hover{
-    background:var(--main-color);
-  }
-  
   .projetos .box-container .box .image{
     padding: 2.5rem 0;
   }
   
   .projetos .box-container .box .image img{
     height: 25rem;
+
   }
   
   .projetos .box-container .box .content h3{
     color:#fff;
+    text-align: center;
     font-size: 2.5rem;
   }
   
@@ -323,6 +313,7 @@
     color:#ccc;
     padding:2rem 0;
     text-align: justify;
+    text-transform:initial;
   }
 
   /* INTEGRANTES STARTS */
@@ -345,6 +336,7 @@
     color:#ccc;
     padding:2rem 0;
     text-align: justify;
+    text-transform:initial;
   }
   
   .integrantes .box-container .box .user{
