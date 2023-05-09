@@ -52,7 +52,7 @@ class Rent(models.Model):
     def name_get(self):
         result = []
         for record in self:
-            rec_name = str(record.customer_id.name) + " - " + str(record.date_time_fixed)
+            rec_name = str(record.customer_id.name) + " - " + str(record.book_id.title)
             result.append((record.id, rec_name))
         return result
 
