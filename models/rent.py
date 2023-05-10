@@ -58,4 +58,7 @@ class Rent(models.Model):
 
     def undo(self):
         for rec in self:
-            rec.state = 'rented'
+            if self.is_expired:
+                rec.state = 'pending'
+            else:
+                rec.state = 'rented'
