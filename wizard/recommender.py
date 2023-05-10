@@ -1,5 +1,7 @@
-from odoo import fields, models
+from odoo import fields, models, _
 from random import choice
+from odoo.exceptions import Warning
+
 
 class Recommender(models.TransientModel):
     _name = 'recommender'
@@ -24,19 +26,22 @@ class Recommender(models.TransientModel):
             domain.append(('author_id','=',self.author_id.id))
             domain.append(('available_quantity', '>', 0))
         book_ids = self.env['book'].search(domain).ids
-        choosed_book = choice(book_ids)
-        ctx = dict()
-        ctx.update({
-            'default_book_id': choosed_book,
-            'default_hide_filter': True
-        })
-        return {
-            'type': 'ir.actions.act_window',
-            'name': 'Recomendador de Livro',
-            'view_type': 'form',
-            'view_mode': 'form',
-            'res_model': 'recommender',
-            'views': [[self.env.ref("debook.recommender_form_view").id, 'form']],
-            'context': ctx,
-            'target': 'new'
-        }
+        if book_ids != []:
+            choosed_book = choice(book_ids)
+            ctx = dict()
+            ctx.update({
+                'default_book_id': choosed_book,
+                'default_hide_filter': True
+            })
+            return {
+                'type': 'ir.actions.act_window',
+                'name': 'Recomendador de Livro',
+                'view_type': 'form',
+                'view_mode': 'form',
+                'res_model': 'recommender',
+                'views': [[self.env.ref("debook.recommender_form_view").id, 'form']],
+                'context': ctx,
+                'target': 'new'
+            }
+        else:
+            raise Warning(_("Não há livros disponíveis com esse filtro"))
