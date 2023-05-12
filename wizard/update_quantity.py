@@ -11,5 +11,5 @@ class UpdateQuantity(models.Model):
         book_id = self.env['book'].browse(active_id)
         rents = book_id.rent_ids.filtered(lambda rent: rent.state != 'returned')
         available = self.quantity - len(rents)
-        book_id.write({'quantity':self.quantity,
+        book_id.write({'quantity':book_id.quantity + self.quantity,
                        'available_quantity':available})

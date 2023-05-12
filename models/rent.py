@@ -20,6 +20,11 @@ class Rent(models.Model):
                              compute="expire", store=True, string="Status")
     is_expired = fields.Boolean(compute="_compute_is_expired")
 
+    @api.onchange("customer_id")
+    def _domain_customer(self):
+        defaulter_customer = self.env['customer'].search([('rent_ids.state','=','pending')])
+        return {"domain": {'customer_id': [('id', 'not in', defaulter_customer.ids)]}}
+
     # fazer função que calcula a data de vencimento de acordo com o selection
     @api.onchange('expire_date')
     def calculate_expire(self):
