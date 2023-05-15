@@ -22,7 +22,8 @@ class BookRegistry(models.TransientModel):
             'book_cover':self.book_cover,
             'year':self.book_year,
             'synopsis':self.book_synopsis,
-            'quantity':self.book_quantity
+            'quantity':self.book_quantity,
+            'available_quantity':self.book_quantity
         }
         self.env['book'].create(book_vals_list)
 
