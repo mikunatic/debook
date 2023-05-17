@@ -214,22 +214,38 @@
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background:url(imagens/home.png) no-repeat;
+    background:url(imagens/home.jpg) no-repeat;
     background-size: cover;
     background-position: center;
   }
-  
-  .inicio .content{
-    max-width: 60rem;
+
+  .inicio .box{
+    display: flex;
+    align-items: center;
+    flex-wrap:wrap;
+    height: 65vh;
   }
   
-  .inicio .content h3{
+  .inicio .box .image{
+    flex:1 1 40rem;
+  }
+  
+  .inicio .box .image img{
+    width: 110%;
+  }
+
+  .inicio .box .content{
+    flex:1 1 30rem;
+    padding:2rem;
+  }
+
+  .inicio .box .content h3{
     font-size: 6rem;
     text-transform: uppercase;
     color:#fff;
   }
   
-  .inicio .content p{
+  .inicio .box .content p{
     font-size: 2rem;
     font-weight: lighter;
     line-height: 1.8;
@@ -237,7 +253,7 @@
     color:#eee;
     text-transform:initial;
   }
-
+  
   /* INICIO ENDS */
 
   /* SOBRE STARTS*/
@@ -247,7 +263,7 @@
     align-items: center;
     background:var(--black);
     flex-wrap: wrap;
-    height: 65vh;
+    height: 70vh;
   }
   
   .sobre .row .image{
@@ -285,7 +301,7 @@
     align-items: center;
     border:var(--border);
     flex-wrap:wrap;
-    height: 65vh;
+    height: 70vh;
   }
   
   .projetos .box .image{
@@ -521,17 +537,17 @@
       right: 2rem;
     }
 
-    .home{
+    .inicio{
       background-position: left;
       justify-content: center;
       text-align: center;
     }
 
-    .home .content h3{
+    .inicio .content h3{
       font-size: 4.5rem;
     }
 
-    .home .content p{
+    .inicio .content p{
       font-size: 1.5rem;
     }
   
@@ -543,4 +559,9 @@
       font-size: 50%;
     }
   
+    .logo {
+     
+      display:grid;
+      
+    }
   }
