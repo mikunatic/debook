@@ -4,3 +4,4 @@ from . import publisher
 from . import genre
 from . import customer
 from . import rent
+from . import city

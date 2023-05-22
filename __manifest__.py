@@ -22,6 +22,7 @@
         'views/book_view.xml',
         'views/customer_view.xml',
         'views/rent_view.xml',
+        'data/res.city.csv',
         'data/genres.xml',
         'data/authors.xml',
         'data/publishers.xml',
