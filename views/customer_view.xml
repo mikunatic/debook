@@ -36,7 +36,7 @@
         </field>
     </record>
     <record id="customer_list_view" model="ir.ui.view">
-        <field name="name">Customer</field>
+        <field name="name">Clientes</field>
         <field name="model">customer</field>
         <field name="arch" type="xml">
             <tree>
@@ -52,5 +52,5 @@
         <field name="view_mode">tree,form</field>
     </record>
     <menuitem id="debook_menu" name="deBook" web_icon="debook,static/description/icon.png"/>
-    <menuitem id="customer_sub_menu" action="customer_action" name="Cliente" parent="debook_menu" sequence="2"/>
+    <menuitem id="customer_sub_menu" action="customer_action" name="Clientes" parent="debook_menu" sequence="2"/>
 </odoo>

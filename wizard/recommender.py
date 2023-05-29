@@ -31,7 +31,10 @@ class Recommender(models.TransientModel):
             ctx = dict()
             ctx.update({
                 'default_book_id': choosed_book,
-                'default_hide_filter': True
+                'default_hide_filter': True,
+                'default_filter': 'genre',
+                'default_genre_id': 1,
+
             })
             return {
                 'type': 'ir.actions.act_window',
@@ -45,3 +48,19 @@ class Recommender(models.TransientModel):
             }
         else:
             raise Warning(_("Não há livros disponíveis com esse filtro"))
+
+    def rent(self):
+        ctx = dict()
+        ctx.update({
+            'default_book_id': self.book_id.id
+        })
+        return {
+            'type': 'ir.actions.act_window',
+            'name': 'Aluguel de Livros',
+            'view_type': 'form',
+            'view_mode': 'form',
+            'res_model': 'rent',
+            'views': [[self.env.ref("debook.rent_form_view").id, 'form']],
+            'context': ctx,
+            'target': 'current'
+        }
