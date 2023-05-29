@@ -2,6 +2,6 @@ from odoo import fields, models
 
 
 class City(models.Model):
-    _inherit = 'res.city'
+    _name = 'city'
 
-    ibge_code = fields.Char()
+    name = fields.Char()

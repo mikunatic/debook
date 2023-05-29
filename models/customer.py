@@ -8,7 +8,7 @@ class Customer(models.Model):
     name = fields.Char("Nome", required=True)
     cpf = fields.Char("CPF", required=True)
     email = fields.Char("E-mail", required=True)
-    city = fields.Many2one('res.city', string="Cidade", required=True, domain=[('state_id','=',95)])
+    city = fields.Many2one('city', string="Cidade", required=True)
     cep = fields.Char("CEP", required=True)
     rent_ids = fields.One2many(comodel_name="rent", inverse_name="customer_id", readonly=True)
 

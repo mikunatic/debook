@@ -8,3 +8,4 @@ customer,customer,model_customer,base.group_user,1,1,1,1
 rent,rent,model_rent,base.group_user,1,1,1,1
 update_quantity,update_quantity,model_update_quantity,base.group_user,1,1,1,1
 recommender,recommender,model_recommender,base.group_user,1,1,1,1
+city,city,model_city,base.group_user,1,1,1,1

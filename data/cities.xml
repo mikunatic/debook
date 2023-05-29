@@ -1,0 +1,13 @@
+<odoo>
+    <data noupdate="1">
+        <record id="city1" model="city">
+            <field name="name">Poá</field>
+        </record>
+        <record id="city2" model="city">
+            <field name="name">Itaquaquecetuba</field>
+        </record>
+        <record id="city3" model="city">
+            <field name="name">Ferraz de Vasconcelos</field>
+        </record>
+    </data>
+</odoo>
