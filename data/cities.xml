@@ -1,13 +1,1915 @@
 <odoo>
     <data noupdate="1">
         <record id="city1" model="city">
-            <field name="name">Poá</field>
+            <field name="name">Adamantina</field>
         </record>
         <record id="city2" model="city">
-            <field name="name">Itaquaquecetuba</field>
+            <field name="name">Adolfo</field>
         </record>
         <record id="city3" model="city">
+            <field name="name">Aguaí</field>
+        </record>
+        <record id="city4" model="city">
+            <field name="name">Águas da Prata</field>
+        </record>
+        <record id="city5" model="city">
+            <field name="name">Águas de Lindóia</field>
+        </record>
+        <record id="city6" model="city">
+            <field name="name">Águas de Santa Bárbara</field>
+        </record>
+        <record id="city7" model="city">
+            <field name="name">Águas de São Pedro</field>
+        </record>
+        <record id="city8" model="city">
+            <field name="name">Agudos</field>
+        </record>
+        <record id="city9" model="city">
+            <field name="name">Alambari</field>
+        </record>
+        <record id="city10" model="city">
+            <field name="name">Alfredo Marcondes</field>
+        </record>
+        <record id="city11" model="city">
+            <field name="name">Altair</field>
+        </record>
+        <record id="city12" model="city">
+            <field name="name">Altinópolis</field>
+        </record>
+        <record id="city13" model="city">
+            <field name="name">Alto Alegre</field>
+        </record>
+        <record id="city14" model="city">
+            <field name="name">Alumínio</field>
+        </record>
+        <record id="city15" model="city">
+            <field name="name">Álvares Florence</field>
+        </record>
+        <record id="city16" model="city">
+            <field name="name">Álvares Machado</field>
+        </record>
+        <record id="city17" model="city">
+            <field name="name">Álvaro de Carvalho</field>
+        </record>
+        <record id="city18" model="city">
+            <field name="name">Alvinlândia</field>
+        </record>
+        <record id="city19" model="city">
+            <field name="name">Americana</field>
+        </record>
+        <record id="city20" model="city">
+            <field name="name">Américo Brasiliense</field>
+        </record>
+        <record id="city21" model="city">
+            <field name="name">Américo de Campos</field>
+        </record>
+        <record id="city22" model="city">
+            <field name="name">Amparo</field>
+        </record>
+        <record id="city23" model="city">
+            <field name="name">Analândia</field>
+        </record>
+        <record id="city24" model="city">
+            <field name="name">Andradina</field>
+        </record>
+        <record id="city25" model="city">
+            <field name="name">Angatuba</field>
+        </record>
+        <record id="city26" model="city">
+            <field name="name">Anhembi</field>
+        </record>
+        <record id="city27" model="city">
+            <field name="name">Anhumas</field>
+        </record>
+        <record id="city28" model="city">
+            <field name="name">Aparecida</field>
+        </record>
+        <record id="city29" model="city">
+            <field name="name">Aparecida d'Oeste</field>
+        </record>
+        <record id="city30" model="city">
+            <field name="name">Apiaí</field>
+        </record>
+        <record id="city31" model="city">
+            <field name="name">Araçariguama</field>
+        </record>
+        <record id="city32" model="city">
+            <field name="name">Araçatuba</field>
+        </record>
+        <record id="city33" model="city">
+            <field name="name">Araçoiaba da Serra</field>
+        </record>
+        <record id="city34" model="city">
+            <field name="name">Aramina</field>
+        </record>
+        <record id="city35" model="city">
+            <field name="name">Arandu</field>
+        </record>
+        <record id="city36" model="city">
+            <field name="name">Arapeí</field>
+        </record>
+        <record id="city37" model="city">
+            <field name="name">Araraquara</field>
+        </record>
+        <record id="city38" model="city">
+            <field name="name">Araras</field>
+        </record>
+        <record id="city39" model="city">
+            <field name="name">Arco-Íris</field>
+        </record>
+        <record id="city40" model="city">
+            <field name="name">Arealva</field>
+        </record>
+        <record id="city41" model="city">
+            <field name="name">Areias</field>
+        </record>
+        <record id="city42" model="city">
+            <field name="name">Areiópolis</field>
+        </record>
+        <record id="city43" model="city">
+            <field name="name">Ariranha</field>
+        </record>
+        <record id="city44" model="city">
+            <field name="name">Artur Nogueira</field>
+        </record>
+        <record id="city45" model="city">
+            <field name="name">Arujá</field>
+        </record>
+        <record id="city46" model="city">
+            <field name="name">Aspásia</field>
+        </record>
+        <record id="city47" model="city">
+            <field name="name">Assis</field>
+        </record>
+        <record id="city48" model="city">
+            <field name="name">Atibaia</field>
+        </record>
+        <record id="city49" model="city">
+            <field name="name">Auriflama</field>
+        </record>
+        <record id="city50" model="city">
+            <field name="name">Avaí</field>
+        </record>
+        <record id="city51" model="city">
+            <field name="name">Avanhandava</field>
+        </record>
+        <record id="city52" model="city">
+            <field name="name">Avaré</field>
+        </record>
+        <record id="city53" model="city">
+            <field name="name">Bady Bassitt</field>
+        </record>
+        <record id="city54" model="city">
+            <field name="name">Balbinos</field>
+        </record>
+        <record id="city55" model="city">
+            <field name="name">Bálsamo</field>
+        </record>
+        <record id="city56" model="city">
+            <field name="name">Bananal</field>
+        </record>
+        <record id="city57" model="city">
+            <field name="name">Barão de Antonina</field>
+        </record>
+        <record id="city58" model="city">
+            <field name="name">Barbosa</field>
+        </record>
+        <record id="city59" model="city">
+            <field name="name">Bariri</field>
+        </record>
+        <record id="city60" model="city">
+            <field name="name">Barra Bonita</field>
+        </record>
+        <record id="city61" model="city">
+            <field name="name">Barra do Chapéu</field>
+        </record>
+        <record id="city62" model="city">
+            <field name="name">Barra do Turvo</field>
+        </record>
+        <record id="city63" model="city">
+            <field name="name">Barretos</field>
+        </record>
+        <record id="city64" model="city">
+            <field name="name">Barrinha</field>
+        </record>
+        <record id="city65" model="city">
+            <field name="name">Barueri</field>
+        </record>
+        <record id="city66" model="city">
+            <field name="name">Bastos</field>
+        </record>
+        <record id="city67" model="city">
+            <field name="name">Batatais</field>
+        </record>
+        <record id="city68" model="city">
+            <field name="name">Bauru</field>
+        </record>
+        <record id="city69" model="city">
+            <field name="name">Bebedouro</field>
+        </record>
+        <record id="city70" model="city">
+            <field name="name">Bento de Abreu</field>
+        </record>
+        <record id="city71" model="city">
+            <field name="name">Bernardino de Campos</field>
+        </record>
+        <record id="city72" model="city">
+            <field name="name">Bertioga</field>
+        </record>
+        <record id="city73" model="city">
+            <field name="name">Bilac</field>
+        </record>
+        <record id="city74" model="city">
+            <field name="name">Birigui</field>
+        </record>
+        <record id="city75" model="city">
+            <field name="name">Biritiba-Mirim</field>
+        </record>
+        <record id="city76" model="city">
+            <field name="name">Boa Esperança do Sul</field>
+        </record>
+        <record id="city77" model="city">
+            <field name="name">Bocaina</field>
+        </record>
+        <record id="city78" model="city">
+            <field name="name">Bofete</field>
+        </record>
+        <record id="city79" model="city">
+            <field name="name">Boituva</field>
+        </record>
+        <record id="city80" model="city">
+            <field name="name">Bom Jesus dos Perdões</field>
+        </record>
+        <record id="city81" model="city">
+            <field name="name">Bom Sucesso de Itararé</field>
+        </record>
+        <record id="city82" model="city">
+            <field name="name">Borá</field>
+        </record>
+        <record id="city83" model="city">
+            <field name="name">Boracéia</field>
+        </record>
+        <record id="city84" model="city">
+            <field name="name">Borborema</field>
+        </record>
+        <record id="city85" model="city">
+            <field name="name">Borebi</field>
+        </record>
+        <record id="city86" model="city">
+            <field name="name">Botucatu</field>
+        </record>
+        <record id="city87" model="city">
+            <field name="name">Bragança Paulista</field>
+        </record>
+        <record id="city88" model="city">
+            <field name="name">Braúna</field>
+        </record>
+        <record id="city89" model="city">
+            <field name="name">Brejo Alegre</field>
+        </record>
+        <record id="city90" model="city">
+            <field name="name">Brodowski</field>
+        </record>
+        <record id="city91" model="city">
+            <field name="name">Brotas</field>
+        </record>
+        <record id="city92" model="city">
+            <field name="name">Buri</field>
+        </record>
+        <record id="city93" model="city">
+            <field name="name">Buritama</field>
+        </record>
+        <record id="city94" model="city">
+            <field name="name">Buritizal</field>
+        </record>
+        <record id="city95" model="city">
+            <field name="name">Cabrália Paulista</field>
+        </record>
+        <record id="city96" model="city">
+            <field name="name">Cabreúva</field>
+        </record>
+        <record id="city97" model="city">
+            <field name="name">Caçapava</field>
+        </record>
+        <record id="city98" model="city">
+            <field name="name">Cachoeira Paulista</field>
+        </record>
+        <record id="city99" model="city">
+            <field name="name">Caconde</field>
+        </record>
+        <record id="city100" model="city">
+            <field name="name">Cafelândia</field>
+        </record>
+        <record id="city101" model="city">
+            <field name="name">Caiabu</field>
+        </record>
+        <record id="city102" model="city">
+            <field name="name">Caieiras</field>
+        </record>
+        <record id="city103" model="city">
+            <field name="name">Caiuá</field>
+        </record>
+        <record id="city104" model="city">
+            <field name="name">Cajamar</field>
+        </record>
+        <record id="city105" model="city">
+            <field name="name">Cajati</field>
+        </record>
+        <record id="city106" model="city">
+            <field name="name">Cajobi</field>
+        </record>
+        <record id="city107" model="city">
+            <field name="name">Cajuru</field>
+        </record>
+        <record id="city108" model="city">
+            <field name="name">Campina do Monte Alegre</field>
+        </record>
+        <record id="city109" model="city">
+            <field name="name">Campinas</field>
+        </record>
+        <record id="city110" model="city">
+            <field name="name">Campo Limpo Paulista</field>
+        </record>
+        <record id="city111" model="city">
+            <field name="name">Campos do Jordão</field>
+        </record>
+        <record id="city112" model="city">
+            <field name="name">Campos Novos Paulista</field>
+        </record>
+        <record id="city113" model="city">
+            <field name="name">Cananéia</field>
+        </record>
+        <record id="city114" model="city">
+            <field name="name">Canas</field>
+        </record>
+        <record id="city115" model="city">
+            <field name="name">Cândido Mota</field>
+        </record>
+        <record id="city116" model="city">
+            <field name="name">Cândido Rodrigues</field>
+        </record>
+        <record id="city117" model="city">
+            <field name="name">Canitar</field>
+        </record>
+        <record id="city118" model="city">
+            <field name="name">Capão Bonito</field>
+        </record>
+        <record id="city119" model="city">
+            <field name="name">Capela do Alto</field>
+        </record>
+        <record id="city120" model="city">
+            <field name="name">Capivari</field>
+        </record>
+        <record id="city121" model="city">
+            <field name="name">Caraguatatuba</field>
+        </record>
+        <record id="city122" model="city">
+            <field name="name">Carapicuíba</field>
+        </record>
+        <record id="city123" model="city">
+            <field name="name">Cardoso</field>
+        </record>
+        <record id="city124" model="city">
+            <field name="name">Casa Branca</field>
+        </record>
+        <record id="city125" model="city">
+            <field name="name">Cássia dos Coqueiros</field>
+        </record>
+        <record id="city126" model="city">
+            <field name="name">Castilho</field>
+        </record>
+        <record id="city127" model="city">
+            <field name="name">Catanduva</field>
+        </record>
+        <record id="city128" model="city">
+            <field name="name">Catiguá</field>
+        </record>
+        <record id="city129" model="city">
+            <field name="name">Cedral</field>
+        </record>
+        <record id="city130" model="city">
+            <field name="name">Cerqueira César</field>
+        </record>
+        <record id="city131" model="city">
+            <field name="name">Cerquilho</field>
+        </record>
+        <record id="city132" model="city">
+            <field name="name">Cesário Lange</field>
+        </record>
+        <record id="city133" model="city">
+            <field name="name">Charqueada</field>
+        </record>
+        <record id="city134" model="city">
+            <field name="name">Chavantes</field>
+        </record>
+        <record id="city135" model="city">
+            <field name="name">Clementina</field>
+        </record>
+        <record id="city136" model="city">
+            <field name="name">Colina</field>
+        </record>
+        <record id="city137" model="city">
+            <field name="name">Colômbia</field>
+        </record>
+        <record id="city138" model="city">
+            <field name="name">Conchal</field>
+        </record>
+        <record id="city139" model="city">
+            <field name="name">Conchas</field>
+        </record>
+        <record id="city140" model="city">
+            <field name="name">Cordeirópolis</field>
+        </record>
+        <record id="city141" model="city">
+            <field name="name">Coroados</field>
+        </record>
+        <record id="city142" model="city">
+            <field name="name">Coronel Macedo</field>
+        </record>
+        <record id="city143" model="city">
+            <field name="name">Corumbataí</field>
+        </record>
+        <record id="city144" model="city">
+            <field name="name">Cosmópolis</field>
+        </record>
+        <record id="city145" model="city">
+            <field name="name">Cosmorama</field>
+        </record>
+        <record id="city146" model="city">
+            <field name="name">Cotia</field>
+        </record>
+        <record id="city147" model="city">
+            <field name="name">Cravinhos</field>
+        </record>
+        <record id="city148" model="city">
+            <field name="name">Cristais Paulista</field>
+        </record>
+        <record id="city149" model="city">
+            <field name="name">Cruzália</field>
+        </record>
+        <record id="city150" model="city">
+            <field name="name">Cruzeiro</field>
+        </record>
+        <record id="city151" model="city">
+            <field name="name">Cubatão</field>
+        </record>
+        <record id="city152" model="city">
+            <field name="name">Cunha</field>
+        </record>
+        <record id="city153" model="city">
+            <field name="name">Descalvado</field>
+        </record>
+        <record id="city154" model="city">
+            <field name="name">Diadema</field>
+        </record>
+        <record id="city155" model="city">
+            <field name="name">Dirce Reis</field>
+        </record>
+        <record id="city156" model="city">
+            <field name="name">Divinolândia</field>
+        </record>
+        <record id="city157" model="city">
+            <field name="name">Dobrada</field>
+        </record>
+        <record id="city158" model="city">
+            <field name="name">Dois Córregos</field>
+        </record>
+        <record id="city159" model="city">
+            <field name="name">Dolcinópolis</field>
+        </record>
+        <record id="city160" model="city">
+            <field name="name">Dourado</field>
+        </record>
+        <record id="city161" model="city">
+            <field name="name">Dracena</field>
+        </record>
+        <record id="city162" model="city">
+            <field name="name">Duartina</field>
+        </record>
+        <record id="city163" model="city">
+            <field name="name">Dumont</field>
+        </record>
+        <record id="city164" model="city">
+            <field name="name">Echaporã</field>
+        </record>
+        <record id="city165" model="city">
+            <field name="name">Eldorado</field>
+        </record>
+        <record id="city166" model="city">
+            <field name="name">Elias Fausto</field>
+        </record>
+        <record id="city167" model="city">
+            <field name="name">Embaúba</field>
+        </record>
+        <record id="city168" model="city">
+            <field name="name">Embu</field>
+        </record>
+        <record id="city169" model="city">
+            <field name="name">Embu-Guaçu</field>
+        </record>
+        <record id="city170" model="city">
+            <field name="name">Emilianópolis</field>
+        </record>
+        <record id="city171" model="city">
+            <field name="name">Engenheiro Coelho</field>
+        </record>
+        <record id="city172" model="city">
+            <field name="name">Espírito Santo do Pinhal</field>
+        </record>
+        <record id="city173" model="city">
+            <field name="name">Espírito Santo do Turvo</field>
+        </record>
+        <record id="city174" model="city">
+            <field name="name">Estiva Gerbi</field>
+        </record>
+        <record id="city175" model="city">
+            <field name="name">Estrela d'Oeste</field>
+        </record>
+        <record id="city176" model="city">
+            <field name="name">Estiva Gerbi</field>
+        </record>
+        <record id="city177" model="city">
+            <field name="name">Estrela do Norte</field>
+        </record>
+        <record id="city178" model="city">
+            <field name="name">Euclides da Cunha Paulista</field>
+        </record>
+        <record id="city179" model="city">
+            <field name="name">Fartura</field>
+        </record>
+        <record id="city180" model="city">
+            <field name="name">Fernando Prestes</field>
+        </record>
+        <record id="city181" model="city">
+            <field name="name">Fernandópolis</field>
+        </record>
+        <record id="city182" model="city">
+            <field name="name">Fernão</field>
+        </record>
+        <record id="city183" model="city">
             <field name="name">Ferraz de Vasconcelos</field>
+        </record>
+        <record id="city184" model="city">
+            <field name="name">Flora Rica</field>
+        </record>
+        <record id="city185" model="city">
+            <field name="name">Floreal</field>
+        </record>
+        <record id="city186" model="city">
+            <field name="name">Flórida Paulista</field>
+        </record>
+        <record id="city187" model="city">
+            <field name="name">Florínia</field>
+        </record>
+        <record id="city188" model="city">
+            <field name="name">Franca</field>
+        </record>
+        <record id="city189" model="city">
+            <field name="name">Francisco Morato</field>
+        </record>
+        <record id="city190" model="city">
+            <field name="name">Franco da Rocha</field>
+        </record>
+        <record id="city191" model="city">
+            <field name="name">Gabriel Monteiro</field>
+        </record>
+        <record id="city192" model="city">
+            <field name="name">Gália</field>
+        </record>
+        <record id="city193" model="city">
+            <field name="name">Garça</field>
+        </record>
+        <record id="city194" model="city">
+            <field name="name">Gastão Vidigal</field>
+        </record>
+        <record id="city195" model="city">
+            <field name="name">Gavião Peixoto</field>
+        </record>
+        <record id="city196" model="city">
+            <field name="name">General Salgado</field>
+        </record>
+        <record id="city197" model="city">
+            <field name="name">Getulina</field>
+        </record>
+        <record id="city198" model="city">
+            <field name="name">Guaiçara</field>
+        </record>
+        <record id="city199" model="city">
+            <field name="name">Guaimbê</field>
+        </record>
+        <record id="city200" model="city">
+            <field name="name">Guaíra</field>
+        </record>
+        <record id="city201" model="city">
+            <field name="name">Guapiaçu</field>
+        </record>
+        <record id="city202" model="city">
+            <field name="name">Guapiara</field>
+        </record>
+        <record id="city203" model="city">
+            <field name="name">Guará</field>
+        </record>
+        <record id="city204" model="city">
+            <field name="name">Guaraçaí</field>
+        </record>
+        <record id="city205" model="city">
+            <field name="name">Guaraci</field>
+        </record>
+        <record id="city206" model="city">
+            <field name="name">Guarani d'Oeste</field>
+        </record>
+        <record id="city207" model="city">
+            <field name="name">Guarantã</field>
+        </record>
+        <record id="city208" model="city">
+            <field name="name">Guararapes</field>
+        </record>
+        <record id="city209" model="city">
+            <field name="name">Guararema</field>
+        </record>
+        <record id="city210" model="city">
+            <field name="name">Guaratinguetá</field>
+        </record>
+        <record id="city211" model="city">
+            <field name="name">Guareí</field>
+        </record>
+        <record id="city212" model="city">
+            <field name="name">Guariba</field>
+        </record>
+        <record id="city213" model="city">
+            <field name="name">Guarujá</field>
+        </record>
+        <record id="city214" model="city">
+            <field name="name">Guarulhos</field>
+        </record>
+        <record id="city215" model="city">
+            <field name="name">Guatapará</field>
+        </record>
+        <record id="city216" model="city">
+            <field name="name">Guzolândia</field>
+        </record>
+        <record id="city217" model="city">
+            <field name="name">Herculândia</field>
+        </record>
+        <record id="city218" model="city">
+            <field name="name">Holambra</field>
+        </record>
+        <record id="city219" model="city">
+            <field name="name">Hortolândia</field>
+        </record>
+        <record id="city220" model="city">
+            <field name="name">Iacanga</field>
+        </record>
+        <record id="city221" model="city">
+            <field name="name">Iacri</field>
+        </record>
+        <record id="city222" model="city">
+            <field name="name">Iaras</field>
+        </record>
+        <record id="city223" model="city">
+            <field name="name">Ibaté</field>
+        </record>
+        <record id="city224" model="city">
+            <field name="name">Ibirá</field>
+        </record>
+        <record id="city225" model="city">
+            <field name="name">Ibirarema</field>
+        </record>
+        <record id="city226" model="city">
+            <field name="name">Ibitinga</field>
+        </record>
+        <record id="city227" model="city">
+            <field name="name">Ibiúna</field>
+        </record>
+        <record id="city228" model="city">
+            <field name="name">Icém</field>
+        </record>
+        <record id="city229" model="city">
+            <field name="name">Igaraçu do Tietê</field>
+        </record>
+        <record id="city230" model="city">
+            <field name="name">Igarapava</field>
+        </record>
+        <record id="city231" model="city">
+            <field name="name">Igaratá</field>
+        </record>
+        <record id="city232" model="city">
+            <field name="name">Iguape</field>
+        </record>
+        <record id="city233" model="city">
+            <field name="name">Ilha Comprida</field>
+        </record>
+        <record id="city234" model="city">
+            <field name="name">Ilha Solteira</field>
+        </record>
+        <record id="city235" model="city">
+            <field name="name">Ilhabela</field>
+        </record>
+        <record id="city236" model="city">
+            <field name="name">Indaiatuba</field>
+        </record>
+        <record id="city237" model="city">
+            <field name="name">Indiana</field>
+        </record>
+        <record id="city238" model="city">
+            <field name="name">Indiaporã</field>
+        </record>
+        <record id="city239" model="city">
+            <field name="name">Inúbia Paulista</field>
+        </record>
+        <record id="city240" model="city">
+            <field name="name">Ipaussu</field>
+        </record>
+        <record id="city241" model="city">
+            <field name="name">Iperó</field>
+        </record>
+        <record id="city242" model="city">
+            <field name="name">Ipeúna</field>
+        </record>
+        <record id="city243" model="city">
+            <field name="name">Ipiguá</field>
+        </record>
+        <record id="city244" model="city">
+            <field name="name">Iporanga</field>
+        </record>
+        <record id="city245" model="city">
+            <field name="name">Ipuã</field>
+        </record>
+        <record id="city246" model="city">
+            <field name="name">Iracemápolis</field>
+        </record>
+        <record id="city247" model="city">
+            <field name="name">Irapuã</field>
+        </record>
+        <record id="city248" model="city">
+            <field name="name">Irapuru</field>
+        </record>
+        <record id="city249" model="city">
+            <field name="name">Itaberá</field>
+        </record>
+        <record id="city250" model="city">
+            <field name="name">Itaí</field>
+        </record>
+        <record id="city251" model="city">
+            <field name="name">Itajobi</field>
+        </record>
+        <record id="city252" model="city">
+            <field name="name">Itaju</field>
+        </record>
+        <record id="city253" model="city">
+            <field name="name">Itanhaém</field>
+        </record>
+        <record id="city254" model="city">
+            <field name="name">Itaóca</field>
+        </record>
+        <record id="city255" model="city">
+            <field name="name">Itapecerica da Serra</field>
+        </record>
+        <record id="city256" model="city">
+            <field name="name">Itapetininga</field>
+        </record>
+        <record id="city257" model="city">
+            <field name="name">Itapeva</field>
+        </record>
+        <record id="city258" model="city">
+            <field name="name">Itapevi</field>
+        </record>
+        <record id="city259" model="city">
+            <field name="name">Itapeva</field>
+        </record>
+        <record id="city260" model="city">
+            <field name="name">Itapira</field>
+        </record>
+        <record id="city261" model="city">
+            <field name="name">Itapirapuã Paulista</field>
+        </record>
+        <record id="city262" model="city">
+            <field name="name">Itápolis</field>
+        </record>
+        <record id="city263" model="city">
+            <field name="name">Itaporanga</field>
+        </record>
+        <record id="city264" model="city">
+            <field name="name">Itapuí</field>
+        </record>
+        <record id="city265" model="city">
+            <field name="name">Itapura</field>
+        </record>
+        <record id="city266" model="city">
+            <field name="name">Itaquaquecetuba</field>
+        </record>
+        <record id="city267" model="city">
+            <field name="name">Itararé</field>
+        </record>
+        <record id="city268" model="city">
+            <field name="name">Itariri</field>
+        </record>
+        <record id="city269" model="city">
+            <field name="name">Itatiba</field>
+        </record>
+        <record id="city270" model="city">
+            <field name="name">Itatinga</field>
+        </record>
+        <record id="city271" model="city">
+            <field name="name">Itirapuã</field>
+        </record>
+        <record id="city272" model="city">
+            <field name="name">Itobi</field>
+        </record>
+        <record id="city273" model="city">
+            <field name="name">Itu</field>
+        </record>
+        <record id="city274" model="city">
+            <field name="name">Itupeva</field>
+        </record>
+        <record id="city275" model="city">
+            <field name="name">Ituverava</field>
+        </record>
+        <record id="city276" model="city">
+            <field name="name">Jaborandi</field>
+        </record>
+        <record id="city277" model="city">
+            <field name="name">Jaboticabal</field>
+        </record>
+        <record id="city278" model="city">
+            <field name="name">Jacareí</field>
+        </record>
+        <record id="city279" model="city">
+            <field name="name">Jaci</field>
+        </record>
+        <record id="city280" model="city">
+            <field name="name">Jacupiranga</field>
+        </record>
+        <record id="city281" model="city">
+            <field name="name">Jaguariúna</field>
+        </record>
+        <record id="city282" model="city">
+            <field name="name">Jales</field>
+        </record>
+        <record id="city283" model="city">
+            <field name="name">Jambeiro</field>
+        </record>
+        <record id="city284" model="city">
+            <field name="name">Jandira</field>
+        </record>
+        <record id="city285" model="city">
+            <field name="name">Jardinópolis</field>
+        </record>
+        <record id="city286" model="city">
+            <field name="name">Jarinu</field>
+        </record>
+        <record id="city287" model="city">
+            <field name="name">Jaú</field>
+        </record>
+        <record id="city288" model="city">
+            <field name="name">Jeriquara</field>
+        </record>
+        <record id="city289" model="city">
+            <field name="name">João Ramalho</field>
+        </record>
+        <record id="city290" model="city">
+            <field name="name">Joanópolis</field>
+        </record>
+        <record id="city291" model="city">
+            <field name="name">José Bonifácio</field>
+        </record>
+        <record id="city292" model="city">
+            <field name="name">Júlio Mesquita</field>
+        </record>
+        <record id="city293" model="city">
+            <field name="name">Jumirim</field>
+        </record>
+        <record id="city294" model="city">
+            <field name="name">Jundiaí</field>
+        </record>
+        <record id="city295" model="city">
+            <field name="name">Junqueirópolis</field>
+        </record>
+        <record id="city296" model="city">
+            <field name="name">Juquiá</field>
+        </record>
+        <record id="city297" model="city">
+            <field name="name">Juquitiba</field>
+        </record>
+        <record id="city298" model="city">
+            <field name="name">Lagoinha</field>
+        </record>
+        <record id="city299" model="city">
+            <field name="name">Laranjal Paulista</field>
+        </record>
+        <record id="city300" model="city">
+            <field name="name">Lavinia</field>
+        </record>
+        <record id="city301" model="city">
+            <field name="name">Lavrinhas</field>
+        </record>
+        <record id="city302" model="city">
+            <field name="name">Leme</field>
+        </record>
+        <record id="city303" model="city">
+            <field name="name">Lençóis Paulista</field>
+        </record>
+        <record id="city304" model="city">
+            <field name="name">Limeira</field>
+        </record>
+        <record id="city305" model="city">
+            <field name="name">Lindóia</field>
+        </record>
+        <record id="city306" model="city">
+            <field name="name">Lins</field>
+        </record>
+        <record id="city307" model="city">
+            <field name="name">Lorena</field>
+        </record>
+        <record id="city308" model="city">
+            <field name="name">Lourdes</field>
+        </record>
+        <record id="city309" model="city">
+            <field name="name">Louveira</field>
+        </record>
+        <record id="city310" model="city">
+            <field name="name">Lucélia</field>
+        </record>
+        <record id="city311" model="city">
+            <field name="name">Lucianópolis</field>
+        </record>
+        <record id="city312" model="city">
+            <field name="name">Luís Antônio</field>
+        </record>
+        <record id="city313" model="city">
+            <field name="name">Luiziânia</field>
+        </record>
+        <record id="city314" model="city">
+            <field name="name">Lupércio</field>
+        </record>
+        <record id="city315" model="city">
+            <field name="name">Lutécia</field>
+        </record>
+        <record id="city316" model="city">
+            <field name="name">Macatuba</field>
+        </record>
+        <record id="city317" model="city">
+            <field name="name">Mâncio Lima</field>
+        </record>
+        <record id="city318" model="city">
+            <field name="name">Manduri</field>
+        </record>
+        <record id="city319" model="city">
+            <field name="name">Marabá Paulista</field>
+        </record>
+        <record id="city320" model="city">
+            <field name="name">Maracaí</field>
+        </record>
+        <record id="city321" model="city">
+            <field name="name">Marapoama</field>
+        </record>
+        <record id="city322" model="city">
+            <field name="name">Mariápolis</field>
+        </record>
+        <record id="city323" model="city">
+            <field name="name">Marília</field>
+        </record>
+        <record id="city324" model="city">
+            <field name="name">Marinópolis</field>
+        </record>
+        <record id="city325" model="city">
+            <field name="name">Martinópolis</field>
+        </record>
+        <record id="city326" model="city">
+            <field name="name">Matão</field>
+        </record>
+        <record id="city327" model="city">
+            <field name="name">Mauá</field>
+        </record>
+        <record id="city328" model="city">
+            <field name="name">Mendonça</field>
+        </record>
+        <record id="city329" model="city">
+            <field name="name">Meridiano</field>
+        </record>
+        <record id="city330" model="city">
+            <field name="name">Mesópolis</field>
+        </record>
+        <record id="city331" model="city">
+            <field name="name">Miguelópolis</field>
+        </record>
+        <record id="city332" model="city">
+            <field name="name">Mineiros do Tietê</field>
+        </record>
+        <record id="city333" model="city">
+            <field name="name">Miracatu</field>
+        </record>
+        <record id="city334" model="city">
+            <field name="name">Mira Estrela</field>
+        </record>
+        <record id="city335" model="city">
+            <field name="name">Mirandópolis</field>
+        </record>
+        <record id="city336" model="city">
+            <field name="name">Mirante do Paranapanema</field>
+        </record>
+        <record id="city337" model="city">
+            <field name="name">Mirassol</field>
+        </record>
+        <record id="city338" model="city">
+            <field name="name">Mirassolândia</field>
+        </record>
+        <record id="city339" model="city">
+            <field name="name">Mococa</field>
+        </record>
+        <record id="city340" model="city">
+            <field name="name">Mogi das Cruzes</field>
+        </record>
+        <record id="city341" model="city">
+            <field name="name">Mogi-Guaçu</field>
+        </record>
+        <record id="city342" model="city">
+            <field name="name">Mogi-Mirim</field>
+        </record>
+        <record id="city343" model="city">
+            <field name="name">Mombuca</field>
+        </record>
+        <record id="city344" model="city">
+            <field name="name">Monções</field>
+        </record>
+        <record id="city345" model="city">
+            <field name="name">Mongaguá</field>
+        </record>
+        <record id="city346" model="city">
+            <field name="name">Monte Alegre do Sul</field>
+        </record>
+        <record id="city347" model="city">
+            <field name="name">Monte Alto</field>
+        </record>
+        <record id="city348" model="city">
+            <field name="name">Monte Aprazível</field>
+        </record>
+        <record id="city349" model="city">
+            <field name="name">Monte Azul Paulista</field>
+        </record>
+        <record id="city350" model="city">
+            <field name="name">Monte Castelo</field>
+        </record>
+        <record id="city351" model="city">
+            <field name="name">Monteiro Lobato</field>
+        </record>
+        <record id="city352" model="city">
+            <field name="name">Montenegro</field>
+        </record>
+        <record id="city353" model="city">
+            <field name="name">Morro Agudo</field>
+        </record>
+        <record id="city354" model="city">
+            <field name="name">Morungaba</field>
+        </record>
+        <record id="city355" model="city">
+            <field name="name">Motuca</field>
+        </record>
+        <record id="city356" model="city">
+            <field name="name">Murutinga do Sul</field>
+        </record>
+        <record id="city357" model="city">
+            <field name="name">Nantes</field>
+        </record>
+        <record id="city358" model="city">
+            <field name="name">Narandiba</field>
+        </record>
+        <record id="city359" model="city">
+            <field name="name">Natividade da Serra</field>
+        </record>
+        <record id="city360" model="city">
+            <field name="name">Nazaré Paulista</field>
+        </record>
+        <record id="city361" model="city">
+            <field name="name">Neves Paulista</field>
+        </record>
+        <record id="city362" model="city">
+            <field name="name">Nhandeara</field>
+        </record>
+        <record id="city363" model="city">
+            <field name="name">Nipoã</field>
+        </record>
+        <record id="city364" model="city">
+            <field name="name">Nova Aliança</field>
+        </record>
+        <record id="city365" model="city">
+            <field name="name">Nova Campina</field>
+        </record>
+        <record id="city366" model="city">
+            <field name="name">Nova Canaã Paulista</field>
+        </record>
+        <record id="city367" model="city">
+            <field name="name">Nova Castilho</field>
+        </record>
+        <record id="city368" model="city">
+            <field name="name">Nova Europa</field>
+        </record>
+        <record id="city369" model="city">
+            <field name="name">Nova Granada</field>
+        </record>
+        <record id="city370" model="city">
+            <field name="name">Nova Guataporanga</field>
+        </record>
+        <record id="city371" model="city">
+            <field name="name">Nova Independência</field>
+        </record>
+        <record id="city372" model="city">
+            <field name="name">Nova Luzitânia</field>
+        </record>
+        <record id="city373" model="city">
+            <field name="name">Nova Odessa</field>
+        </record>
+        <record id="city374" model="city">
+            <field name="name">Novais</field>
+        </record>
+        <record id="city375" model="city">
+            <field name="name">Novo Horizonte</field>
+        </record>
+        <record id="city376" model="city">
+            <field name="name">Nuporanga</field>
+        </record>
+        <record id="city377" model="city">
+            <field name="name">Ocauçu</field>
+        </record>
+        <record id="city378" model="city">
+            <field name="name">Óleo</field>
+        </record>
+        <record id="city379" model="city">
+            <field name="name">Olímpia</field>
+        </record>
+        <record id="city380" model="city">
+            <field name="name">Onda Verde</field>
+        </record>
+        <record id="city381" model="city">
+            <field name="name">Oriente</field>
+        </record>
+        <record id="city382" model="city">
+            <field name="name">Orindiúva</field>
+        </record>
+        <record id="city383" model="city">
+            <field name="name">Orlândia</field>
+        </record>
+        <record id="city384" model="city">
+            <field name="name">Osasco</field>
+        </record>
+        <record id="city385" model="city">
+            <field name="name">Oscar Bressane</field>
+        </record>
+        <record id="city386" model="city">
+            <field name="name">Osvaldo Cruz</field>
+        </record>
+        <record id="city387" model="city">
+            <field name="name">Ourinhos</field>
+        </record>
+        <record id="city388" model="city">
+            <field name="name">Ouroeste</field>
+        </record>
+        <record id="city389" model="city">
+            <field name="name">Ouro Verde</field>
+        </record>
+        <record id="city390" model="city">
+            <field name="name">Pacaembu</field>
+        </record>
+        <record id="city391" model="city">
+            <field name="name">Palestina</field>
+        </record>
+        <record id="city392" model="city">
+            <field name="name">Palmares Paulista</field>
+        </record>
+        <record id="city393" model="city">
+            <field name="name">Palmeira d'Oeste</field>
+        </record>
+        <record id="city394" model="city">
+            <field name="name">Palmital</field>
+        </record>
+        <record id="city395" model="city">
+            <field name="name">Panorama</field>
+        </record>
+        <record id="city396" model="city">
+            <field name="name">Paraguaçu Paulista</field>
+        </record>
+        <record id="city397" model="city">
+            <field name="name">Paraibuna</field>
+        </record>
+        <record id="city398" model="city">
+            <field name="name">Paraíso</field>
+        </record>
+        <record id="city399" model="city">
+            <field name="name">Paranapanema</field>
+        </record>
+        <record id="city400" model="city">
+            <field name="name">Paranapuã</field>
+        </record>
+        <record id="city401" model="city">
+            <field name="name">Parapuã</field>
+        </record>
+        <record id="city402" model="city">
+            <field name="name">Pardinho</field>
+        </record>
+        <record id="city403" model="city">
+            <field name="name">Pariquera-Açu</field>
+        </record>
+        <record id="city404" model="city">
+            <field name="name">Patrocínio Paulista</field>
+        </record>
+        <record id="city405" model="city">
+            <field name="name">Paulicéia</field>
+        </record>
+        <record id="city406" model="city">
+            <field name="name">Paulínia</field>
+        </record>
+        <record id="city407" model="city">
+            <field name="name">Paulistânia</field>
+        </record>
+        <record id="city408" model="city">
+            <field name="name">Paulo de Faria</field>
+        </record>
+        <record id="city409" model="city">
+            <field name="name">Pederneiras</field>
+        </record>
+        <record id="city410" model="city">
+            <field name="name">Pedra Bela</field>
+        </record>
+        <record id="city411" model="city">
+            <field name="name">Pedranópolis</field>
+        </record>
+        <record id="city412" model="city">
+            <field name="name">Pedregulho</field>
+        </record>
+        <record id="city413" model="city">
+            <field name="name">Pedreira</field>
+        </record>
+        <record id="city414" model="city">
+            <field name="name">Pedrinhas Paulista</field>
+        </record>
+        <record id="city415" model="city">
+            <field name="name">Pedro de Toledo</field>
+        </record>
+        <record id="city416" model="city">
+            <field name="name">Penápolis</field>
+        </record>
+        <record id="city417" model="city">
+            <field name="name">Pereira Barreto</field>
+        </record>
+        <record id="city418" model="city">
+            <field name="name">Pereiras</field>
+        </record>
+        <record id="city419" model="city">
+            <field name="name">Peruíbe</field>
+        </record>
+        <record id="city420" model="city">
+            <field name="name">Piacatu</field>
+        </record>
+        <record id="city421" model="city">
+            <field name="name">Piedade</field>
+        </record>
+        <record id="city422" model="city">
+            <field name="name">Pilar do Sul</field>
+        </record>
+        <record id="city423" model="city">
+            <field name="name">Pindamonhangaba</field>
+        </record>
+        <record id="city424" model="city">
+            <field name="name">Pindorama</field>
+        </record>
+        <record id="city425" model="city">
+            <field name="name">Pinhalzinho</field>
+        </record>
+        <record id="city426" model="city">
+            <field name="name">Piquerobi</field>
+        </record>
+        <record id="city427" model="city">
+            <field name="name">Piquete</field>
+        </record>
+        <record id="city428" model="city">
+            <field name="name">Piracaia</field>
+        </record>
+        <record id="city429" model="city">
+            <field name="name">Piracicaba</field>
+        </record>
+        <record id="city430" model="city">
+            <field name="name">Piraju</field>
+        </record>
+        <record id="city431" model="city">
+            <field name="name">Pirajuí</field>
+        </record>
+        <record id="city432" model="city">
+            <field name="name">Pirangi</field>
+        </record>
+        <record id="city433" model="city">
+            <field name="name">Pirapora do Bom Jesus</field>
+        </record>
+        <record id="city434" model="city">
+            <field name="name">Pirapozinho</field>
+        </record>
+        <record id="city435" model="city">
+            <field name="name">Pirassununga</field>
+        </record>
+        <record id="city436" model="city">
+            <field name="name">Piratininga</field>
+        </record>
+        <record id="city437" model="city">
+            <field name="name">Pitangueiras</field>
+        </record>
+        <record id="city438" model="city">
+            <field name="name">Planalto</field>
+        </record>
+        <record id="city439" model="city">
+            <field name="name">Platina</field>
+        </record>
+        <record id="city440" model="city">
+            <field name="name">Poá</field>
+        </record>
+        <record id="city441" model="city">
+            <field name="name">Poloni</field>
+        </record>
+        <record id="city442" model="city">
+            <field name="name">Pompéia</field>
+        </record>
+        <record id="city443" model="city">
+            <field name="name">Pongaí</field>
+        </record>
+        <record id="city444" model="city">
+            <field name="name">Pontal</field>
+        </record>
+        <record id="city445" model="city">
+            <field name="name">Pontalinda</field>
+        </record>
+        <record id="city446" model="city">
+            <field name="name">Pontes Gestal</field>
+        </record>
+        <record id="city447" model="city">
+            <field name="name">Populina</field>
+        </record>
+        <record id="city448" model="city">
+            <field name="name">Porangaba</field>
+        </record>
+        <record id="city449" model="city">
+            <field name="name">Porto Feliz</field>
+        </record>
+        <record id="city450" model="city">
+            <field name="name">Porto Ferreira</field>
+        </record>
+        <record id="city451" model="city">
+            <field name="name">Potim</field>
+        </record>
+        <record id="city452" model="city">
+            <field name="name">Potirendaba</field>
+        </record>
+        <record id="city453" model="city">
+            <field name="name">Pracinha</field>
+        </record>
+        <record id="city454" model="city">
+            <field name="name">Pradópolis</field>
+        </record>
+        <record id="city455" model="city">
+            <field name="name">Praia Grande</field>
+        </record>
+        <record id="city456" model="city">
+            <field name="name">Pratânia</field>
+        </record>
+        <record id="city457" model="city">
+            <field name="name">Presidente Alves</field>
+        </record>
+        <record id="city458" model="city">
+            <field name="name">Presidente Bernardes</field>
+        </record>
+        <record id="city459" model="city">
+            <field name="name">Presidente Epitácio</field>
+        </record>
+        <record id="city460" model="city">
+            <field name="name">Presidente Prudente</field>
+        </record>
+        <record id="city461" model="city">
+            <field name="name">Presidente Venceslau</field>
+        </record>
+        <record id="city462" model="city">
+            <field name="name">Promissão</field>
+        </record>
+        <record id="city463" model="city">
+            <field name="name">Quadra</field>
+        </record>
+        <record id="city464" model="city">
+            <field name="name">Quatá</field>
+        </record>
+        <record id="city465" model="city">
+            <field name="name">Queluz</field>
+        </record>
+        <record id="city466" model="city">
+            <field name="name">Quintana</field>
+        </record>
+        <record id="city467" model="city">
+            <field name="name">Rafard</field>
+        </record>
+        <record id="city468" model="city">
+            <field name="name">Rancharia</field>
+        </record>
+        <record id="city469" model="city">
+            <field name="name">Redenção da Serra</field>
+        </record>
+        <record id="city470" model="city">
+            <field name="name">Regente Feijó</field>
+        </record>
+        <record id="city471" model="city">
+            <field name="name">Reginópolis</field>
+        </record>
+        <record id="city472" model="city">
+            <field name="name">Registro</field>
+        </record>
+        <record id="city473" model="city">
+            <field name="name">Restinga</field>
+        </record>
+        <record id="city474" model="city">
+            <field name="name">Ribeira</field>
+        </record>
+        <record id="city475" model="city">
+            <field name="name">Ribeirão Bonito</field>
+        </record>
+        <record id="city476" model="city">
+            <field name="name">Ribeirão Branco</field>
+        </record>
+        <record id="city477" model="city">
+            <field name="name">Ribeirão Corrente</field>
+        </record>
+        <record id="city478" model="city">
+            <field name="name">Ribeirão do Sul</field>
+        </record>
+        <record id="city479" model="city">
+            <field name="name">Ribeirão dos Índios</field>
+        </record>
+        <record id="city480" model="city">
+            <field name="name">Ribeirão Grande</field>
+        </record>
+        <record id="city481" model="city">
+            <field name="name">Ribeirão Pires</field>
+        </record>
+        <record id="city482" model="city">
+            <field name="name">Ribeirão Preto</field>
+        </record>
+        <record id="city483" model="city">
+            <field name="name">Rifaina</field>
+        </record>
+        <record id="city484" model="city">
+            <field name="name">Rincão</field>
+        </record>
+        <record id="city485" model="city">
+            <field name="name">Rinópolis</field>
+        </record>
+        <record id="city486" model="city">
+            <field name="name">Rio Claro</field>
+        </record>
+        <record id="city487" model="city">
+            <field name="name">Rio das Pedras</field>
+        </record>
+        <record id="city488" model="city">
+            <field name="name">Rio Grande da Serra</field>
+        </record>
+        <record id="city489" model="city">
+            <field name="name">Riolândia</field>
+        </record>
+        <record id="city490" model="city">
+            <field name="name">Riversul</field>
+        </record>
+        <record id="city491" model="city">
+            <field name="name">Rosana</field>
+        </record>
+        <record id="city492" model="city">
+            <field name="name">Roseira</field>
+        </record>
+        <record id="city493" model="city">
+            <field name="name">Rubiácea</field>
+        </record>
+        <record id="city494" model="city">
+            <field name="name">Rubinéia</field>
+        </record>
+        <record id="city495" model="city">
+            <field name="name">Sabino</field>
+        </record>
+        <record id="city496" model="city">
+            <field name="name">Sagres</field>
+        </record>
+        <record id="city497" model="city">
+            <field name="name">Sales</field>
+        </record>
+        <record id="city498" model="city">
+            <field name="name">Sales Oliveira</field>
+        </record>
+        <record id="city499" model="city">
+            <field name="name">Salesópolis</field>
+        </record>
+        <record id="city500" model="city">
+            <field name="name">Salmourão</field>
+        </record>
+        <record id="city501" model="city">
+            <field name="name">Saltinho</field>
+        </record>
+        <record id="city502" model="city">
+            <field name="name">Salto</field>
+        </record>
+        <record id="city503" model="city">
+            <field name="name">Salto de Pirapora</field>
+        </record>
+        <record id="city504" model="city">
+            <field name="name">Salto Grande</field>
+        </record>
+        <record id="city505" model="city">
+            <field name="name">Sandovalina</field>
+        </record>
+        <record id="city506" model="city">
+            <field name="name">Santa Adélia</field>
+        </record>
+        <record id="city507" model="city">
+            <field name="name">Santa Albertina</field>
+        </record>
+        <record id="city508" model="city">
+            <field name="name">Santa Bárbara d'Oeste</field>
+        </record>
+        <record id="city509" model="city">
+            <field name="name">Santa Clara d'Oeste</field>
+        </record>
+        <record id="city510" model="city">
+            <field name="name">Santa Cruz da Conceição</field>
+        </record>
+        <record id="city511" model="city">
+            <field name="name">Santa Cruz da Esperança</field>
+        </record>
+        <record id="city512" model="city">
+            <field name="name">Santa Cruz das Palmeiras</field>
+        </record>
+        <record id="city513" model="city">
+            <field name="name">Santa Cruz do Rio Pardo</field>
+        </record>
+        <record id="city514" model="city">
+            <field name="name">Santa Ernestina</field>
+        </record>
+        <record id="city515" model="city">
+            <field name="name">Santa Fé do Sul</field>
+        </record>
+        <record id="city516" model="city">
+            <field name="name">Santa Gertrudes</field>
+        </record>
+        <record id="city517" model="city">
+            <field name="name">Santa Isabel</field>
+        </record>
+        <record id="city518" model="city">
+            <field name="name">Santa Lúcia</field>
+        </record>
+        <record id="city519" model="city">
+            <field name="name">Santa Maria da Serra</field>
+        </record>
+        <record id="city520" model="city">
+            <field name="name">Santa Mercedes</field>
+        </record>
+        <record id="city521" model="city">
+            <field name="name">Santa Rita d'Oeste</field>
+        </record>
+        <record id="city522" model="city">
+            <field name="name">Santa Rita do Passa Quatro</field>
+        </record>
+        <record id="city523" model="city">
+            <field name="name">Santa Rosa de Viterbo</field>
+        </record>
+        <record id="city524" model="city">
+            <field name="name">Santa Salete</field>
+        </record>
+        <record id="city525" model="city">
+            <field name="name">Santana da Ponte Pensa</field>
+        </record>
+        <record id="city526" model="city">
+            <field name="name">Santana de Parnaíba</field>
+        </record>
+        <record id="city527" model="city">
+            <field name="name">Santo Anastácio</field>
+        </record>
+        <record id="city528" model="city">
+            <field name="name">Santo André</field>
+        </record>
+        <record id="city529" model="city">
+            <field name="name">Santo Antônio da Alegria</field>
+        </record>
+        <record id="city530" model="city">
+            <field name="name">Santo Antônio de Posse</field>
+        </record>
+        <record id="city531" model="city">
+            <field name="name">Santo Antônio do Aracanguá</field>
+        </record>
+        <record id="city532" model="city">
+            <field name="name">Santo Antônio do Jardim</field>
+        </record>
+        <record id="city533" model="city">
+            <field name="name">Santo Antônio do Pinhal</field>
+        </record>
+        <record id="city534" model="city">
+            <field name="name">Santo Expedito</field>
+        </record>
+        <record id="city535" model="city">
+            <field name="name">Santópolis do Aguapeí</field>
+        </record>
+        <record id="city536" model="city">
+            <field name="name">Santos</field>
+        </record>
+        <record id="city537" model="city">
+            <field name="name">São Bento do Sapucaí</field>
+        </record>
+        <record id="city538" model="city">
+            <field name="name">São Bernardo do Campo</field>
+        </record>
+        <record id="city539" model="city">
+            <field name="name">São Caetano do Sul</field>
+        </record>
+        <record id="city540" model="city">
+            <field name="name">São Carlos</field>
+        </record>
+        <record id="city541" model="city">
+            <field name="name">São Francisco</field>
+        </record>
+        <record id="city542" model="city">
+            <field name="name">São João da Boa Vista</field>
+        </record>
+        <record id="city543" model="city">
+            <field name="name">São João das Duas Pontes</field>
+        </record>
+        <record id="city544" model="city">
+            <field name="name">São João de Iracema</field>
+        </record>
+        <record id="city545" model="city">
+            <field name="name">São João do Pau d'Alho</field>
+        </record>
+        <record id="city546" model="city">
+            <field name="name">São Joaquim da Barra</field>
+        </record>
+        <record id="city547" model="city">
+            <field name="name">São José da Bela Vista</field>
+        </record>
+        <record id="city548" model="city">
+            <field name="name">São José do Barreiro</field>
+        </record>
+        <record id="city549" model="city">
+            <field name="name">São José do Rio Pardo</field>
+        </record>
+        <record id="city550" model="city">
+            <field name="name">São José do Rio Preto</field>
+        </record>
+        <record id="city551" model="city">
+            <field name="name">São José dos Campos</field>
+        </record>
+        <record id="city552" model="city">
+            <field name="name">São Lourenço da Serra</field>
+        </record>
+        <record id="city553" model="city">
+            <field name="name">São Luiz do Paraitinga</field>
+        </record>
+        <record id="city554" model="city">
+            <field name="name">São Manuel</field>
+        </record>
+        <record id="city555" model="city">
+            <field name="name">São Miguel Arcanjo</field>
+        </record>
+        <record id="city556" model="city">
+            <field name="name">São Paulo</field>
+        </record>
+        <record id="city557" model="city">
+            <field name="name">São Pedro</field>
+        </record>
+        <record id="city558" model="city">
+            <field name="name">São Pedro do Turvo</field>
+        </record>
+        <record id="city559" model="city">
+            <field name="name">São Roque</field>
+        </record>
+        <record id="city560" model="city">
+            <field name="name">São Sebastião</field>
+        </record>
+        <record id="city561" model="city">
+            <field name="name">São Sebastião da Grama</field>
+        </record>
+        <record id="city562" model="city">
+            <field name="name">São Simão</field>
+        </record>
+        <record id="city563" model="city">
+            <field name="name">São Vicente</field>
+        </record>
+        <record id="city564" model="city">
+            <field name="name">Sarapuí</field>
+        </record>
+        <record id="city565" model="city">
+            <field name="name">Sarutaiá</field>
+        </record>
+        <record id="city566" model="city">
+            <field name="name">Sebastianópolis do Sul</field>
+        </record>
+        <record id="city567" model="city">
+            <field name="name">Serra Azul</field>
+        </record>
+        <record id="city568" model="city">
+            <field name="name">Serra Negra</field>
+        </record>
+        <record id="city569" model="city">
+            <field name="name">Serrana</field>
+        </record>
+        <record id="city570" model="city">
+            <field name="name">Sertãozinho</field>
+        </record>
+        <record id="city571" model="city">
+            <field name="name">Sete Barras</field>
+        </record>
+        <record id="city572" model="city">
+            <field name="name">Severínia</field>
+        </record>
+        <record id="city573" model="city">
+            <field name="name">Silveiras</field>
+        </record>
+        <record id="city574" model="city">
+            <field name="name">Socorro</field>
+        </record>
+        <record id="city575" model="city">
+            <field name="name">Sorocaba</field>
+        </record>
+        <record id="city576" model="city">
+            <field name="name">Sud Mennucci</field>
+        </record>
+        <record id="city577" model="city">
+            <field name="name">Sumaré</field>
+        </record>
+        <record id="city578" model="city">
+            <field name="name">Suzanápolis</field>
+        </record>
+        <record id="city579" model="city">
+            <field name="name">Suzano</field>
+        </record>
+        <record id="city580" model="city">
+            <field name="name">Tabapuã</field>
+        </record>
+        <record id="city581" model="city">
+            <field name="name">Tabatinga</field>
+        </record>
+        <record id="city582" model="city">
+            <field name="name">Taboão da Serra</field>
+        </record>
+        <record id="city583" model="city">
+            <field name="name">Taciba</field>
+        </record>
+        <record id="city584" model="city">
+            <field name="name">Taguaí</field>
+        </record>
+        <record id="city585" model="city">
+            <field name="name">Taiaçu</field>
+        </record>
+        <record id="city586" model="city">
+            <field name="name">Taiúva</field>
+        </record>
+        <record id="city587" model="city">
+            <field name="name">Tambaú</field>
+        </record>
+        <record id="city588" model="city">
+            <field name="name">Tanabi</field>
+        </record>
+        <record id="city589" model="city">
+            <field name="name">Tapiraí</field>
+        </record>
+        <record id="city590" model="city">
+            <field name="name">Tapiratiba</field>
+        </record>
+        <record id="city591" model="city">
+            <field name="name">Taquaral</field>
+        </record>
+        <record id="city592" model="city">
+            <field name="name">Taquaritinga</field>
+        </record>
+        <record id="city593" model="city">
+            <field name="name">Taquarituba</field>
+        </record>
+        <record id="city594" model="city">
+            <field name="name">Taquarivaí</field>
+        </record>
+        <record id="city595" model="city">
+            <field name="name">Tarabai</field>
+        </record>
+        <record id="city596" model="city">
+            <field name="name">Tarumã</field>
+        </record>
+        <record id="city597" model="city">
+            <field name="name">Tatuí</field>
+        </record>
+        <record id="city598" model="city">
+            <field name="name">Taubaté</field>
+        </record>
+        <record id="city599" model="city">
+            <field name="name">Tejupá</field>
+        </record>
+        <record id="city600" model="city">
+            <field name="name">Teodoro Sampaio</field>
+        </record>
+        <record id="city601" model="city">
+            <field name="name">Terra Roxa</field>
+        </record>
+        <record id="city602" model="city">
+            <field name="name">Tietê</field>
+        </record>
+        <record id="city603" model="city">
+            <field name="name">Timburi</field>
+        </record>
+        <record id="city604" model="city">
+            <field name="name">Torre de Pedra</field>
+        </record>
+        <record id="city605" model="city">
+            <field name="name">Torrinha</field>
+        </record>
+        <record id="city606" model="city">
+            <field name="name">Trabiju</field>
+        </record>
+        <record id="city607" model="city">
+            <field name="name">Tremembé</field>
+        </record>
+        <record id="city608" model="city">
+            <field name="name">Três Fronteiras</field>
+        </record>
+        <record id="city609" model="city">
+            <field name="name">Tuiuti</field>
+        </record>
+        <record id="city610" model="city">
+            <field name="name">Tupã</field>
+        </record>
+        <record id="city611" model="city">
+            <field name="name">Tupi Paulista</field>
+        </record>
+        <record id="city612" model="city">
+            <field name="name">Turiúba</field>
+        </record>
+        <record id="city613" model="city">
+            <field name="name">Turmalina</field>
+        </record>
+        <record id="city614" model="city">
+            <field name="name">Ubarana</field>
+        </record>
+        <record id="city615" model="city">
+            <field name="name">Ubatuba</field>
+        </record>
+        <record id="city616" model="city">
+            <field name="name">Ubirajara</field>
+        </record>
+        <record id="city617" model="city">
+            <field name="name">Uchoa</field>
+        </record>
+        <record id="city618" model="city">
+            <field name="name">União Paulista</field>
+        </record>
+        <record id="city619" model="city">
+            <field name="name">Urânia</field>
+        </record>
+        <record id="city620" model="city">
+            <field name="name">Uru</field>
+        </record>
+        <record id="city621" model="city">
+            <field name="name">Urupês</field>
+        </record>
+        <record id="city622" model="city">
+            <field name="name">Valentim Gentil</field>
+        </record>
+        <record id="city623" model="city">
+            <field name="name">Valinhos</field>
+        </record>
+        <record id="city624" model="city">
+            <field name="name">Valparaíso</field>
+        </record>
+        <record id="city625" model="city">
+            <field name="name">Vargem</field>
+        </record>
+        <record id="city626" model="city">
+            <field name="name">Vargem Grande do Sul</field>
+        </record>
+        <record id="city627" model="city">
+            <field name="name">Vargem Grande Paulista</field>
+        </record>
+        <record id="city628" model="city">
+            <field name="name">Várzea Paulista</field>
+        </record>
+        <record id="city629" model="city">
+            <field name="name">Vera Cruz</field>
+        </record>
+        <record id="city630" model="city">
+            <field name="name">Vinhedo</field>
+        </record>
+        <record id="city631" model="city">
+            <field name="name">Viradouro</field>
+        </record>
+        <record id="city632" model="city">
+            <field name="name">Vista Alegre do Alto</field>
+        </record>
+        <record id="city633" model="city">
+            <field name="name">Vitória Brasil</field>
+        </record>
+        <record id="city634" model="city">
+            <field name="name">Votorantim</field>
+        </record>
+        <record id="city635" model="city">
+            <field name="name">Votuporanga</field>
+        </record>
+        <record id="city636" model="city">
+            <field name="name">Zacarias</field>
+        </record>
+        <record id="city637" model="city">
+            <field name="name">Itaim Paulista</field>
         </record>
     </data>
 </odoo>
