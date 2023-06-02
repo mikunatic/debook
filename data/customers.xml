@@ -5,28 +5,28 @@
             <field name='cpf'>12345678912</field>
             <field name='email'>agatha@gmail.com</field>
             <field name='cep'>01234567</field>
-            <field name='city'>1</field>
+            <field name='city'>440</field>
         </record>
         <record id='customer2' model='customer'>
             <field name='name'>Eric</field>
             <field name='cpf'>12345678912</field>
             <field name='email'>eric@gmail.com</field>
             <field name='cep'>01234567</field>
-            <field name='city'>3</field>
+            <field name='city'>183</field>
         </record>
         <record id='customer3' model='customer'>
             <field name='name'>Júlia</field>
             <field name='cpf'>12345678912</field>
             <field name='email'>julia@gmail.com</field>
             <field name='cep'>01234567</field>
-            <field name='city'>1</field>
+            <field name='city'>440</field>
         </record>
         <record id='customer4' model='customer'>
             <field name='name'>Mila</field>
             <field name='cpf'>12345678912</field>
             <field name='email'>mila@gmail.com</field>
             <field name='cep'>01234567</field>
-            <field name='city'>2</field>
+            <field name='city'>266</field>
         </record>
     </data>
 </odoo>
