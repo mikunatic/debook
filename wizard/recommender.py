@@ -64,3 +64,19 @@ class Recommender(models.TransientModel):
             'context': ctx,
             'target': 'current'
         }
+
+    def sort_again(self):
+        ctx = dict()
+        ctx.update({
+            'default_hide_filter': False,
+        })
+        return {
+            'type': 'ir.actions.act_window',
+            'name': 'Recomendador de Livro',
+            'view_type': 'form',
+            'view_mode': 'form',
+            'res_model': 'recommender',
+            'views': [[self.env.ref("debook.recommender_form_view").id, 'form']],
+            'context': ctx,
+            'target': 'new'
+        }

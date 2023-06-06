@@ -26,6 +26,7 @@
                             attrs="{'invisible':['|',('filter','=',False),('hide_filter','=',True)]}" class="btn btn-primary"/>
                     <button name="rent" type="object" string="Alugar"
                         class="btn btn-primary" attrs="{'invisible':[('book_id','=',False)]}"/>
+                    <button name="sort_again" type="object" string="Sortear Novamente" attrs="{'invisible':[('hide_filter','=',False)]}"/>
                 </footer>
             </form>
         </field>
