@@ -12,6 +12,7 @@
                         <field name="book_author" options="{'no_create_edit':True, 'no_open': True}"/>
                         <field name="book_publisher" options="{'no_create_edit':True, 'no_open': True}"/>
                         <field name="book_year"/>
+                        <field name="book_pages"/>
                         <field name="book_synopsis"/>
                         <field name="book_quantity"/>
                     </group>

@@ -16,6 +16,7 @@
                             <field name="author_id" options="{'no_create':True, 'no_create_edit':True, 'no_open':True}"/>
                             <field name="publisher_id" options="{'no_create':True, 'no_create_edit':True, 'no_open':True}"/>
                             <field name="year"/>
+                            <field name="pages"/>
                             <field name="synopsis" style="text-align: justify;"/>
                             <field name="quantity" />
                             <field name="available_quantity"/>

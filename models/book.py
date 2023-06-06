@@ -11,6 +11,7 @@ class Book(models.Model):
     genre_ids = fields.Many2many('genre', string="Gênero")
     book_cover = fields.Binary(string="Capa do Livro")
     year = fields.Integer("Ano de Lançamento")
+    pages = fields.Integer("Páginas")
     synopsis = fields.Text("Sinopse")
     rent_ids = fields.One2many(comodel_name="rent", inverse_name="book_id", readonly=True, string="Aluguéis")
     quantity = fields.Integer(string="Quantidade", readonly=True)

@@ -16,6 +16,7 @@
                         <field name="book_id" attrs="{'invisible':[('book_id','=',False)]}"
                         options="{'no_create':True, 'no_create_edit':True, 'no_open':True}"/>
                         <field name="book_synopsis" attrs="{'invisible':[('book_id','=',False)]}"/>
+                        <field name="book_pages" attrs="{'invisible':[('book_id','=',False)]}"/>
                     </group>
                     <group>
                         <field name="book_cover" attrs="{'invisible':[('book_id','=',False)]}" widget="image"/>

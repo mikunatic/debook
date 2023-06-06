@@ -13,6 +13,7 @@ class Recommender(models.TransientModel):
     author_id = fields.Many2one('author', string="Autor")
     book_id = fields.Many2one('book', string="Livro Sorteado", readonly=True)
     book_synopsis = fields.Text(related='book_id.synopsis', string="Sinopse")
+    book_pages = fields.Integer(related='book_id.pages', string="Páginas")
     book_cover = fields.Binary(related='book_id.book_cover', string="Capa do Livro")
     hide_filter = fields.Boolean(default=False)
 

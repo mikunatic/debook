@@ -11,6 +11,7 @@ class BookRegistry(models.TransientModel):
     book_quantity = fields.Integer(default=1, string="Quantidade", required=True)
     book_cover = fields.Binary("Capa do Livro", required=True)
     book_year = fields.Integer("Ano de Lançamento", required=True)
+    book_pages = fields.Integer("Páginas", required=True)
     book_synopsis = fields.Text("Sinopse", required=True)
 
     def register_book(self):
@@ -21,6 +22,7 @@ class BookRegistry(models.TransientModel):
             'genre_ids':self.book_genre.ids,
             'book_cover':self.book_cover,
             'year':self.book_year,
+            'pages':self.book_pages,
             'synopsis':self.book_synopsis,
             'quantity':self.book_quantity,
             'available_quantity':self.book_quantity
