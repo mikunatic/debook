@@ -1,4 +1,5 @@
-from odoo import fields, models, api
+from odoo import fields, models, api, _
+from odoo.exceptions import UserError
 import requests
 
 
@@ -6,11 +7,19 @@ class Customer(models.Model):
     _name = 'customer'
 
     name = fields.Char("Nome", required=True)
-    cpf = fields.Char("CPF", required=True)
+    cpf = fields.Char("CPF", required=True, limit=11)
     email = fields.Char("E-mail", required=True)
     city = fields.Many2one('city', string="Cidade", required=True)
-    cep = fields.Char("CEP", required=True)
+    cep = fields.Char("CEP", required=True,limit=8)
     rent_ids = fields.One2many(comodel_name="rent", inverse_name="customer_id", readonly=True)
+
+    @api.model
+    def create(self, vals_list):
+        if len(vals_list['cep']) != 8:
+            raise UserError(_("Número de caracteres de CEP inválido!"))
+        if len(vals_list['cpf']) != 11:
+            raise UserError(_("Número de caracteres de CPF inválido!"))
+        return super(Customer, self).create(vals_list)
 
     # @api.onchange('cep')
     # def onchange_cep(self):
