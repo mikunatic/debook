@@ -15,11 +15,11 @@ class BookRegistry(models.TransientModel):
     book_synopsis = fields.Text("Sinopse", required=True)
 
     def register_book(self):
-        if self.book_pages < 0:
+        if self.book_pages <= 0:
             raise UserError(_("Número de páginas inválido"))
-        if self.book_year < 0 or self.book_year > (fields.Date.today().year):
+        if self.book_year <= 0 or self.book_year > (fields.Date.today().year):
             raise UserError(_("Ano inválido"))
-        if self.book_quantity < 0:
+        if self.book_quantity <= 0:
             raise UserError(_("Quantidade inválida"))
         book_vals_list = {
             'title':self.book_title,
