@@ -22,12 +22,11 @@ class Recommender(models.TransientModel):
         domain = []
         if self.filter == 'genre':
             domain.append(('genre_ids','=',self.genre_id.id))
-            domain.append(('available_quantity','>',0))
         else:
             domain.append(('author_id','=',self.author_id.id))
-            domain.append(('available_quantity', '>', 0))
+        domain.append(('available_quantity', '>', 0))
         book_ids = self.env['book'].search(domain).ids
-        if book_ids != []:
+        if book_ids:
             choosed_book = choice(book_ids)
             ctx = dict()
             ctx.update({
