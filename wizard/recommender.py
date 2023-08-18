@@ -17,7 +17,6 @@ class Recommender(models.TransientModel):
     book_cover = fields.Binary(related='book_id.book_cover', string="Capa do Livro")
     hide_filter = fields.Boolean(default=False)
 
-
     def show_book(self):
         domain = []
         if self.filter == 'genre':
@@ -34,7 +33,6 @@ class Recommender(models.TransientModel):
                 'default_hide_filter': True,
                 'default_filter': 'genre',
                 'default_genre_id': 1,
-
             })
             return {
                 'type': 'ir.actions.act_window',

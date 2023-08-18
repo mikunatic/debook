@@ -5,7 +5,7 @@ class Book(models.Model):
     _name = 'book'
     _rec_name = 'title'
 
-    title = fields.Char("Título")
+    title = fields.Char(string="Título")
     author_id = fields.Many2one('author', string="Autor")
     publisher_id = fields.Many2one('publisher', string="Editora")
     genre_ids = fields.Many2many('genre', string="Gênero")
