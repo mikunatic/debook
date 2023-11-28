@@ -94,6 +94,13 @@
         <field name="name">Aluguéis</field>
         <field name="res_model">rent</field>
         <field name="view_mode">calendar,tree,form</field>
+        <field name="help" type="html">
+          <p class="o_view_nocontent_smiling_face">
+            Nenhum aluguel criado.
+          </p><p>
+            Experimente criar um!
+          </p>
+        </field>
     </record>
     <menuitem id="debook_menu" name="deBook" web_icon="debook,static/description/icon.png"/>
     <menuitem id="rent_sub_menu" action="rent_action" name="Aluguel de Livros" parent="debook_menu" sequence="3"/>
