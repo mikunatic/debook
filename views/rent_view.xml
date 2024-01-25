@@ -40,7 +40,7 @@
                         </group>
                     </group>
                     <notebook>
-                        <page id="rents" string="Aluguéis" attrs="{'invisible':[('customer_id','=',False)]}">
+                        <page id="rents" attrs="{'invisible':[('customer_id','=',False)]}">
                             <field name="rent_ids"/>
                         </page>
                     </notebook>
