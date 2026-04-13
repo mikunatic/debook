@@ -3,7 +3,7 @@
     'category': 'Library',
     'summary': 'Library CRM',
     'version': '1.0',
-    'author': 'Mila Martins',
+    'author': 'Thiago Martins',
     'contributors': [
         'Ágatha Jamille'
         'Eric Gonçalves'
